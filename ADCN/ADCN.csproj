@@ -34,7 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>MaslowSmart_icon.ico</ApplicationIcon>
+    <ApplicationIcon>LogoJaraSmart.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -480,8 +480,10 @@
     <None Include="Resources\sound_on_disable.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="LogoJaraSmart.ico" />
     <Content Include="MaslowSmart.ico" />
     <Content Include="MaslowSmart_icon.ico" />
+    <None Include="Resources\LogoJaraSmart.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -75,7 +75,7 @@
             // 
             // btnPista
             // 
-            this.btnPista.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnPista.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(180)))), ((int)(((byte)(99)))));
             this.btnPista.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPista.FlatAppearance.BorderSize = 0;
             this.btnPista.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gold;
@@ -93,7 +93,7 @@
             // 
             // btnRendirse
             // 
-            this.btnRendirse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnRendirse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(180)))), ((int)(((byte)(99)))));
             this.btnRendirse.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRendirse.FlatAppearance.BorderSize = 0;
             this.btnRendirse.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
@@ -113,7 +113,7 @@
             // 
             this.pbxNivel1.Image = ((System.Drawing.Image)(resources.GetObject("pbxNivel1.Image")));
             this.pbxNivel1.Location = new System.Drawing.Point(114, 18);
-            this.pbxNivel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbxNivel1.Margin = new System.Windows.Forms.Padding(2);
             this.pbxNivel1.Name = "pbxNivel1";
             this.pbxNivel1.Size = new System.Drawing.Size(839, 437);
             this.pbxNivel1.TabIndex = 0;
@@ -125,7 +125,7 @@
             // 
             this.pbxN1.Image = ((System.Drawing.Image)(resources.GetObject("pbxN1.Image")));
             this.pbxN1.Location = new System.Drawing.Point(701, 188);
-            this.pbxN1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbxN1.Margin = new System.Windows.Forms.Padding(2);
             this.pbxN1.Name = "pbxN1";
             this.pbxN1.Size = new System.Drawing.Size(39, 46);
             this.pbxN1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -138,7 +138,7 @@
             // 
             this.pbxNivel2.Image = ((System.Drawing.Image)(resources.GetObject("pbxNivel2.Image")));
             this.pbxNivel2.Location = new System.Drawing.Point(114, 18);
-            this.pbxNivel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbxNivel2.Margin = new System.Windows.Forms.Padding(2);
             this.pbxNivel2.Name = "pbxNivel2";
             this.pbxNivel2.Size = new System.Drawing.Size(839, 437);
             this.pbxNivel2.TabIndex = 37;
@@ -150,7 +150,7 @@
             // 
             this.pbxN2.Image = ((System.Drawing.Image)(resources.GetObject("pbxN2.Image")));
             this.pbxN2.Location = new System.Drawing.Point(783, 233);
-            this.pbxN2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbxN2.Margin = new System.Windows.Forms.Padding(2);
             this.pbxN2.Name = "pbxN2";
             this.pbxN2.Size = new System.Drawing.Size(33, 29);
             this.pbxN2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -163,7 +163,7 @@
             // 
             this.pbxNivel3.Image = ((System.Drawing.Image)(resources.GetObject("pbxNivel3.Image")));
             this.pbxNivel3.Location = new System.Drawing.Point(114, 18);
-            this.pbxNivel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbxNivel3.Margin = new System.Windows.Forms.Padding(2);
             this.pbxNivel3.Name = "pbxNivel3";
             this.pbxNivel3.Size = new System.Drawing.Size(839, 437);
             this.pbxNivel3.TabIndex = 39;
@@ -187,7 +187,7 @@
             // 
             this.pbxNivel4.Image = ((System.Drawing.Image)(resources.GetObject("pbxNivel4.Image")));
             this.pbxNivel4.Location = new System.Drawing.Point(114, 18);
-            this.pbxNivel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbxNivel4.Margin = new System.Windows.Forms.Padding(2);
             this.pbxNivel4.Name = "pbxNivel4";
             this.pbxNivel4.Size = new System.Drawing.Size(839, 437);
             this.pbxNivel4.TabIndex = 41;
@@ -199,7 +199,7 @@
             // 
             this.pbxN4.Image = ((System.Drawing.Image)(resources.GetObject("pbxN4.Image")));
             this.pbxN4.Location = new System.Drawing.Point(473, 102);
-            this.pbxN4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbxN4.Margin = new System.Windows.Forms.Padding(2);
             this.pbxN4.Name = "pbxN4";
             this.pbxN4.Size = new System.Drawing.Size(43, 43);
             this.pbxN4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -212,7 +212,7 @@
             // 
             this.pbxNivel5.Image = ((System.Drawing.Image)(resources.GetObject("pbxNivel5.Image")));
             this.pbxNivel5.Location = new System.Drawing.Point(114, 18);
-            this.pbxNivel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbxNivel5.Margin = new System.Windows.Forms.Padding(2);
             this.pbxNivel5.Name = "pbxNivel5";
             this.pbxNivel5.Size = new System.Drawing.Size(839, 437);
             this.pbxNivel5.TabIndex = 43;
@@ -224,7 +224,7 @@
             // 
             this.pbxN5.Image = ((System.Drawing.Image)(resources.GetObject("pbxN5.Image")));
             this.pbxN5.Location = new System.Drawing.Point(870, 209);
-            this.pbxN5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbxN5.Margin = new System.Windows.Forms.Padding(2);
             this.pbxN5.Name = "pbxN5";
             this.pbxN5.Size = new System.Drawing.Size(30, 43);
             this.pbxN5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -237,7 +237,7 @@
             // 
             this.pbxNivel6.Image = ((System.Drawing.Image)(resources.GetObject("pbxNivel6.Image")));
             this.pbxNivel6.Location = new System.Drawing.Point(114, 18);
-            this.pbxNivel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbxNivel6.Margin = new System.Windows.Forms.Padding(2);
             this.pbxNivel6.Name = "pbxNivel6";
             this.pbxNivel6.Size = new System.Drawing.Size(839, 437);
             this.pbxNivel6.TabIndex = 45;
@@ -249,7 +249,7 @@
             // 
             this.pbxN6.Image = ((System.Drawing.Image)(resources.GetObject("pbxN6.Image")));
             this.pbxN6.Location = new System.Drawing.Point(767, 386);
-            this.pbxN6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbxN6.Margin = new System.Windows.Forms.Padding(2);
             this.pbxN6.Name = "pbxN6";
             this.pbxN6.Size = new System.Drawing.Size(26, 35);
             this.pbxN6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -308,7 +308,7 @@
             this.Controls.Add(this.pbxN1);
             this.Controls.Add(this.pbxNivel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmJuegoAtencion2";
             this.Text = "frmJuegoAtencion1";
             this.Load += new System.EventHandler(this.frmJuegoAtencion1_Load);

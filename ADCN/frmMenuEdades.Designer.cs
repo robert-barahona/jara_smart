@@ -52,7 +52,7 @@
             // btnEdad11
             // 
             this.btnEdad11.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnEdad11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnEdad11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(180)))), ((int)(((byte)(99)))));
             this.btnEdad11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEdad11.FlatAppearance.BorderSize = 0;
             this.btnEdad11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
@@ -71,7 +71,7 @@
             // btnEdad10
             // 
             this.btnEdad10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnEdad10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnEdad10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(180)))), ((int)(((byte)(99)))));
             this.btnEdad10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEdad10.FlatAppearance.BorderSize = 0;
             this.btnEdad10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
@@ -90,7 +90,7 @@
             // btnEdad12
             // 
             this.btnEdad12.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnEdad12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnEdad12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(180)))), ((int)(((byte)(99)))));
             this.btnEdad12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEdad12.FlatAppearance.BorderSize = 0;
             this.btnEdad12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;

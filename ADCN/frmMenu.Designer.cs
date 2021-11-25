@@ -61,7 +61,7 @@
             // 
             // pnlTop
             // 
-            this.pnlTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.pnlTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(111)))), ((int)(((byte)(61)))));
             this.pnlTop.Controls.Add(this.btnMinimizar);
             this.pnlTop.Controls.Add(this.btnCerrar);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
@@ -100,7 +100,7 @@
             // 
             // pnlMenu
             // 
-            this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(180)))), ((int)(((byte)(99)))));
             this.pnlMenu.Controls.Add(this.lblIdioma);
             this.pnlMenu.Controls.Add(this.pbxIdiomaIngles);
             this.pnlMenu.Controls.Add(this.pbxIdiomaEspañol);
@@ -171,7 +171,7 @@
             // pbxLogoMaslow
             // 
             this.pbxLogoMaslow.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbxLogoMaslow.Image = global::ADCN.Properties.Resources.logo_maslow_school;
+            this.pbxLogoMaslow.Image = global::ADCN.Properties.Resources.LogoJaraSmart;
             this.pbxLogoMaslow.Location = new System.Drawing.Point(24, 18);
             this.pbxLogoMaslow.Name = "pbxLogoMaslow";
             this.pbxLogoMaslow.Size = new System.Drawing.Size(148, 144);
@@ -196,10 +196,9 @@
             // 
             // btnJuegosMemoria
             // 
-            this.btnJuegosMemoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnJuegosMemoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(180)))), ((int)(((byte)(99)))));
             this.btnJuegosMemoria.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnJuegosMemoria.FlatAppearance.BorderSize = 0;
-            this.btnJuegosMemoria.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.btnJuegosMemoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnJuegosMemoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnJuegosMemoria.ForeColor = System.Drawing.Color.White;
@@ -214,10 +213,9 @@
             // 
             // btnJuegosAtencion
             // 
-            this.btnJuegosAtencion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnJuegosAtencion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(180)))), ((int)(((byte)(99)))));
             this.btnJuegosAtencion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnJuegosAtencion.FlatAppearance.BorderSize = 0;
-            this.btnJuegosAtencion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.btnJuegosAtencion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnJuegosAtencion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnJuegosAtencion.ForeColor = System.Drawing.Color.White;
@@ -241,7 +239,7 @@
             // 
             // lblEncabezado
             // 
-            this.lblEncabezado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.lblEncabezado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(235)))), ((int)(((byte)(198)))));
             this.lblEncabezado.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblEncabezado.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEncabezado.Location = new System.Drawing.Point(0, 0);
@@ -250,6 +248,7 @@
             this.lblEncabezado.TabIndex = 1;
             this.lblEncabezado.Text = "Bienvenido";
             this.lblEncabezado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblEncabezado.Click += new System.EventHandler(this.lblEncabezado_Click);
             // 
             // pnlForms
             // 
@@ -262,10 +261,10 @@
             // 
             // pbxLogo
             // 
-            this.pbxLogo.Image = global::ADCN.Properties.Resources.LogoMaslow;
-            this.pbxLogo.Location = new System.Drawing.Point(291, 49);
+            this.pbxLogo.Image = global::ADCN.Properties.Resources.LogoJaraSmart;
+            this.pbxLogo.Location = new System.Drawing.Point(373, 101);
             this.pbxLogo.Name = "pbxLogo";
-            this.pbxLogo.Size = new System.Drawing.Size(469, 377);
+            this.pbxLogo.Size = new System.Drawing.Size(316, 247);
             this.pbxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxLogo.TabIndex = 17;
             this.pbxLogo.TabStop = false;

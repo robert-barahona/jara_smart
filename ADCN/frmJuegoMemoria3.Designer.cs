@@ -84,7 +84,7 @@
             // 
             // btnRendirse
             // 
-            this.btnRendirse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnRendirse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(180)))), ((int)(((byte)(99)))));
             this.btnRendirse.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRendirse.FlatAppearance.BorderSize = 0;
             this.btnRendirse.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
@@ -102,7 +102,7 @@
             // 
             // btnPista
             // 
-            this.btnPista.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnPista.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(180)))), ((int)(((byte)(99)))));
             this.btnPista.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPista.FlatAppearance.BorderSize = 0;
             this.btnPista.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gold;

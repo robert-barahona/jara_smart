@@ -49,10 +49,9 @@
             // 
             // btnEmpezar
             // 
-            this.btnEmpezar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnEmpezar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(180)))), ((int)(((byte)(99)))));
             this.btnEmpezar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEmpezar.FlatAppearance.BorderSize = 0;
-            this.btnEmpezar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.btnEmpezar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEmpezar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmpezar.ForeColor = System.Drawing.Color.White;

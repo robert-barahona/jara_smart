@@ -183,5 +183,10 @@ namespace ADCN
             PictureBox pbx = sender as PictureBox;
             pbx.Size = new Size(35, 37);
         }
+
+        private void lblEncabezado_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
