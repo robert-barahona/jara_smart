@@ -16,7 +16,6 @@ namespace ADCN
     {
         public string nombre_est;
         public string juego;
-        public string color = "naranja";
         public bool sonido = true;
 
         public frmMenu(string nombre_est)
