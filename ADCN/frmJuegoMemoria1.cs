@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ADCN.Data;
+using ADCN.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -35,8 +37,9 @@ namespace ADCN
                 timer1.Enabled = true;
             }
             escribirTexto();
-            juego.nombre_juego = "Tablas de multiplicar";
+            juego.idJuego = 4;
             juego.puntuacion = 0;
+            juego.nombre_juego = "Tablas de multiplicar";
             juego.mostrarNivel(1);
             mouseDownRojo();
         }
@@ -48,7 +51,7 @@ namespace ADCN
                 juego.reproducirSonido("ring");
                 juego.puntuacion += 1000;
                 pbxCheck.Image = Image.FromFile("..\\..\\Resources\\lista.png");
-                nuevaOperacion();
+                nuevaOperacionAsync();
             }
             else
             {
@@ -67,7 +70,7 @@ namespace ADCN
                 juego.reproducirSonido("ring");
                 juego.puntuacion += 1000;
                 pbxCheck.Image = Image.FromFile("..\\..\\Resources\\lista.png");
-                nuevaOperacion();
+                nuevaOperacionAsync();
             }
             else
             {
@@ -86,7 +89,7 @@ namespace ADCN
                 juego.reproducirSonido("ring");
                 juego.puntuacion += 1000;
                 pbxCheck.Image = Image.FromFile("..\\..\\Resources\\lista.png");
-                nuevaOperacion();
+                nuevaOperacionAsync();
             }
             else
             {
@@ -105,7 +108,7 @@ namespace ADCN
                 juego.reproducirSonido("ring");
                 juego.puntuacion += 1000;
                 pbxCheck.Image = Image.FromFile("..\\..\\Resources\\lista.png");
-                nuevaOperacion();
+                nuevaOperacionAsync();
             }
             else
             {
@@ -117,7 +120,7 @@ namespace ADCN
             timer2.Start();
         }
 
-        private void nuevaOperacion()
+        private async Task nuevaOperacionAsync()
         {
             string[] nivel = lblNivel.Text.Split();
             switch (nivel[1])
@@ -154,8 +157,10 @@ namespace ADCN
                 timer1.Stop();
                 this.Enabled = false;
                 puntaje_total = juego.gestionarPuntuacion(total_segundos);
-                frmFinDeJuego finDeJuego = new frmFinDeJuego(Res.Obtuviste + " " + puntaje_total.ToString() + " " + Res.Puntos, juego.nombre_juego);
+                frmFinDeJuego finDeJuego = new frmFinDeJuego(Res.Obtuviste + " " + puntaje_total.ToString() + " " + Res.Puntos, juego.idJuego, juego.nombre_juego);
                 finDeJuego.Show();
+
+                juego.SavePointsAsync();
             }
         }
 

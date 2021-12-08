@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ADCN.Data;
+using ADCN.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,8 +38,9 @@ namespace ADCN
                 timer1.Enabled = true;
             }
             escribirTexto();
-            juego.nombre_juego = "Había una vez";
+            juego.idJuego = 6;
             juego.puntuacion = 0;
+            juego.nombre_juego = "Había una vez";
             juego.mostrarNivel(1);
             lblFrase.Focus();
         }
@@ -79,7 +82,7 @@ namespace ADCN
             timer2.Start();
         }
 
-        private void comprobarPaseDeNivel()
+        private async Task comprobarPaseDeNivelAsync()
         {
             string[] nivel = lblNivel.Text.Split();
             switch (nivel[1])
@@ -109,8 +112,10 @@ namespace ADCN
                         timer1.Stop();
                         this.Enabled = false;
                         puntaje_total = juego.gestionarPuntuacion(total_segundos);
-                        frmFinDeJuego finDeJuego = new frmFinDeJuego(Res.Obtuviste + " " + puntaje_total.ToString() + " " + Res.Puntos, juego.nombre_juego);
+                        frmFinDeJuego finDeJuego = new frmFinDeJuego(Res.Obtuviste + " " + puntaje_total.ToString() + " " + Res.Puntos, juego.idJuego, juego.nombre_juego);
                         finDeJuego.Show();
+
+                        juego.SavePointsAsync();
                     }
                     break;
             }
@@ -218,7 +223,7 @@ namespace ADCN
                 AcceptButton = btnSiguiente;
                 lblFrase.Focus();
                 lblTitulo.Text = Res.Memoriza_la_frase_y_haz_clic_en_siguiente;
-                comprobarPaseDeNivel();
+                comprobarPaseDeNivelAsync();
             }
         }
     }

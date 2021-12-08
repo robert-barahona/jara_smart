@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ADCN.Data;
+using ADCN.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,8 +35,9 @@ namespace ADCN
                 timer1.Enabled = true;
             }
             escribirTexto();
-            juego.nombre_juego = "Elegir la letra correcta";
+            juego.idJuego = 1;
             juego.puntuacion = 0;
+            juego.nombre_juego = "Elegir la letra correcta";
             juego.mostrarNivel(1);
         }
 
@@ -44,11 +47,11 @@ namespace ADCN
             Button clickedButton = sender as Button;
             juego.puntuacion += 2000;
             contador++;
-            comprobarPaseDeNivel();
+            comprobarPaseDeNivelAsync();
             clickedButton.Enabled = false;
         }
 
-        private void comprobarPaseDeNivel()
+        private async Task comprobarPaseDeNivelAsync()
         {
             string[] nivel = lblNivel.Text.Split();
             switch (nivel[1])
@@ -87,8 +90,9 @@ namespace ADCN
                         timer1.Stop();
                         this.Enabled = false;
                         puntaje_total = juego.gestionarPuntuacion(total_segundos);
-                        frmFinDeJuego finDeJuego = new frmFinDeJuego(Res.Obtuviste + " " + puntaje_total.ToString() + " " + Res.Puntos, juego.nombre_juego);
+                        frmFinDeJuego finDeJuego = new frmFinDeJuego(Res.Obtuviste + " " + puntaje_total.ToString() + " " + Res.Puntos, juego.idJuego, juego.nombre_juego);
                         finDeJuego.Show();
+                        juego.SavePointsAsync();
                     }
                     break;
             }
@@ -186,7 +190,7 @@ namespace ADCN
             clickedButton.Enabled = false;
             numeros -= 1;
             juego.puntuacion += 2000;
-            comprobarPaseDeNivel();
+            comprobarPaseDeNivelAsync();
         }
     }
 }

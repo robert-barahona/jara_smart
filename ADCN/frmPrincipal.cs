@@ -12,6 +12,7 @@ namespace ADCN
 {
     public partial class frmPrincipal : Form
     {
+        private Clases.DesarrolloCognitivo app = Clases.DesarrolloCognitivo.Instance();
 
         public frmPrincipal()
         {
@@ -20,8 +21,7 @@ namespace ADCN
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
-            Clases.DesarrolloCognitivo des_cog = new Clases.DesarrolloCognitivo();
-            if (des_cog.cargarLogo())
+            if (app.cargarLogo())
             {
                 pbxLogo.Visible = true;
             }
@@ -29,23 +29,21 @@ namespace ADCN
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            Clases.DesarrolloCognitivo des_cog = new Clases.DesarrolloCognitivo();
             if (txtNombre.Text == "")
             {
                 MessageBox.Show("ERROR! Nombre vacío","Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                des_cog.registrarNombre(txtNombre.Text);
-                des_cog.mostrarMenu();
+                app.registrarNombre(txtNombre.Text);
+                app.mostrarMenu();
                 this.Close();
             }      
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            Clases.DesarrolloCognitivo des_cog = new Clases.DesarrolloCognitivo();
-            if (des_cog.cerrarAplicacion())
+            if (app.cerrarAplicacion())
             {
                 Application.Exit();
             }

@@ -6,13 +6,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+using ADCN.Data;
+using ADCN.Models;
 
 namespace ADCN.Clases
 {
     class Juego
     {
+        public int idJuego;
         public string nombre_juego;
         public int puntuacion;
+        private int puntaje_total;
+        private SQLiteHelper db = SQLiteHelper.Instance();
 
         public void reproducirSonido(string sonido)
         {
@@ -26,7 +31,7 @@ namespace ADCN.Clases
 
         public int gestionarPuntuacion(int tiempo)
         {
-            int puntaje_total = 0;
+            puntaje_total = 0;
 
             if (puntuacion <= 0)
                 puntaje_total = 0;
@@ -757,6 +762,16 @@ namespace ADCN.Clases
             {
                 menu.lblEncabezado.Text = Res.Juegos_de_Memoria;
             }
+        }
+
+        public async void SavePointsAsync()
+        {
+            Result result = new Result();
+            result.idResult = 0;
+            result.name = DesarrolloCognitivo.Instance().nombre_est;
+            result.idJuego = idJuego;
+            result.points = puntaje_total;
+            await db.SaveResultAsync(result);
         }
     }
 }

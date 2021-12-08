@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ADCN.Data;
+using ADCN.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,6 +34,7 @@ namespace ADCN
                 timer1.Enabled = true;
             }
             escribirTexto();
+            juego.idJuego = 3;
             juego.nombre_juego = "Colores y Significados";
             juego.puntuacion = 0;
             juego.mostrarNivel(1);
@@ -73,7 +76,7 @@ namespace ADCN
             timer2.Start();
         }
 
-        private void actualizarPantalla()
+        private async Task actualizarPantallaAsync()
         {
             contador++;
 
@@ -97,8 +100,11 @@ namespace ADCN
                 timer1.Stop();
                 this.Enabled = false;
                 puntaje_total = juego.gestionarPuntuacion(total_segundos);
-                frmFinDeJuego finDeJuego = new frmFinDeJuego(Res.Obtuviste + " " + puntaje_total.ToString() + " " + Res.Puntos, juego.nombre_juego);
+                frmFinDeJuego finDeJuego = new frmFinDeJuego(Res.Obtuviste + " " + puntaje_total.ToString() + " " + Res.Puntos, juego.idJuego, juego.nombre_juego);
                 finDeJuego.Show();
+
+                juego.SavePointsAsync();
+
             }
 
             string[] nivel = lblNivel.Text.Split();
@@ -202,7 +208,7 @@ namespace ADCN
         private void timer2_Tick(object sender, EventArgs e)
         {
             timer2.Stop();
-            actualizarPantalla();
+            actualizarPantallaAsync();
             pbxCheck.Visible = false;
         }
     }

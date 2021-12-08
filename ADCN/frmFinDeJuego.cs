@@ -13,12 +13,14 @@ namespace ADCN
     public partial class frmFinDeJuego : Form
     {
         private string mensaje;
-        private string juego;
+        private int idGame;
+        private string nombreJuego;
 
-        public frmFinDeJuego(string mensaje, string juego)
+        public frmFinDeJuego(string mensaje, int idGame, string nombreJuego)
         {
+            this.nombreJuego = nombreJuego;
             this.mensaje = mensaje;
-            this.juego = juego;
+            this.idGame = idGame;
             InitializeComponent();
         }
 
@@ -34,8 +36,9 @@ namespace ADCN
             delay.Stop();
             pbxTrophy.Enabled = false;
             lblMensaje.Visible = true;
-            //lblEncabezado.Visible = true;
+            lblEncabezado.Visible = true;
             btnVolverAJugar.Visible = true;
+            btnPuntuaciones.Visible = true;
             btnVerVideo.Visible = true;
             btnSalir.Visible = true;
         }
@@ -52,29 +55,29 @@ namespace ADCN
 
         private void btnVolverAJugar_Click(object sender, EventArgs e)
         {
-            switch (juego)
+            switch (idGame)
             {
-                case "Elegir la letra correcta":
+                case 1:
                     frmJuegoAtencion1 juegoAtencion1 = Application.OpenForms.OfType<frmJuegoAtencion1>().SingleOrDefault();
                     juegoAtencion1.volverAJugar();
                     break;
-                case "Dónde está pikachu":
+                case 2:
                     frmJuegoAtencion2 juegoAtencion2 = Application.OpenForms.OfType<frmJuegoAtencion2>().SingleOrDefault();
                     juegoAtencion2.volverAJugar();
                     break;
-                case "Colores y Significados":
+                case 3:
                     frmJuegoAtencion3 juegoAtencion3 = Application.OpenForms.OfType<frmJuegoAtencion3>().SingleOrDefault();
                     juegoAtencion3.volverAJugar();
                     break;
-                case "Tablas de multiplicar":
+                case 4:
                     frmJuegoMemoria1 juegoMemoria1 = Application.OpenForms.OfType<frmJuegoMemoria1>().SingleOrDefault();
                     juegoMemoria1.volverAJugar();
                     break;
-                case "Provincias del Ecuador":
+                case 5:
                     frmJuegoMemoria2 juegoMemoria2 = Application.OpenForms.OfType<frmJuegoMemoria2>().SingleOrDefault();
                     juegoMemoria2.volverAJugar();
                     break;
-                case "Había una vez":
+                case 6:
                     frmJuegoMemoria3 juegoMemoria3 = Application.OpenForms.OfType<frmJuegoMemoria3>().SingleOrDefault();
                     juegoMemoria3.volverAJugar();
                     break;
@@ -84,29 +87,29 @@ namespace ADCN
 
         private void btnVerVideo_Click(object sender, EventArgs e)
         {
-            switch (juego)
+            switch (idGame)
             {
-                case "Elegir la letra correcta":
+                case 1:
                     frmJuegoAtencion1 juegoAtencion1 = Application.OpenForms.OfType<frmJuegoAtencion1>().SingleOrDefault();
                     juegoAtencion1.abrirVideo();
                     break;
-                case "Dónde está pikachu":
+                case 2:
                     frmJuegoAtencion2 juegoAtencion2 = Application.OpenForms.OfType<frmJuegoAtencion2>().SingleOrDefault();
                     juegoAtencion2.abrirVideo();
                     break;
-                case "Colores y Significados":
+                case 3:
                     frmJuegoAtencion3 juegoAtencion3 = Application.OpenForms.OfType<frmJuegoAtencion3>().SingleOrDefault();
                     juegoAtencion3.abrirVideo();
                     break;
-                case "Tablas de multiplicar":
+                case 4:
                     frmJuegoMemoria1 juegoMemoria1 = Application.OpenForms.OfType<frmJuegoMemoria1>().SingleOrDefault();
                     juegoMemoria1.abrirVideo();
                     break;
-                case "Provincias del Ecuador":
+                case 5:
                     frmJuegoMemoria2 juegoMemoria2 = Application.OpenForms.OfType<frmJuegoMemoria2>().SingleOrDefault();
                     juegoMemoria2.abrirVideo();
                     break;
-                case "Había una vez":
+                case 6:
                     frmJuegoMemoria3 juegoMemoria3 = Application.OpenForms.OfType<frmJuegoMemoria3>().SingleOrDefault();
                     juegoMemoria3.abrirVideo();
                     break;
@@ -115,34 +118,40 @@ namespace ADCN
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            switch (juego)
+            switch (idGame)
             {
-                case "Elegir la letra correcta":
+                case 1:
                     frmJuegoAtencion1 juegoAtencion1 = Application.OpenForms.OfType<frmJuegoAtencion1>().SingleOrDefault();
                     juegoAtencion1.abrirMenuPrincipal();
                     break;
-                case "Dónde está pikachu":
+                case 2:
                     frmJuegoAtencion2 juegoAtencion2 = Application.OpenForms.OfType<frmJuegoAtencion2>().SingleOrDefault();
                     juegoAtencion2.abrirMenuPrincipal();
                     break;
-                case "Colores y Significados":
+                case 3:
                     frmJuegoAtencion3 juegoAtencion3 = Application.OpenForms.OfType<frmJuegoAtencion3>().SingleOrDefault();
                     juegoAtencion3.abrirMenuPrincipal();
                     break;
-                case "Tablas de multiplicar":
+                case 4:
                     frmJuegoMemoria1 juegoMemoria1 = Application.OpenForms.OfType<frmJuegoMemoria1>().SingleOrDefault();
                     juegoMemoria1.abrirMenuPrincipal();
                     break;
-                case "Provincias del Ecuador":
+                case 5:
                     frmJuegoMemoria2 juegoMemoria2 = Application.OpenForms.OfType<frmJuegoMemoria2>().SingleOrDefault();
                     juegoMemoria2.abrirMenuPrincipal();
                     break;
-                case "Había una vez":
+                case 6:
                     frmJuegoMemoria3 juegoMemoria3 = Application.OpenForms.OfType<frmJuegoMemoria3>().SingleOrDefault();
                     juegoMemoria3.abrirMenuPrincipal();
                     break;
             }
             this.Close();
+        }
+
+        private void btnPuntuaciones_Click(object sender, EventArgs e)
+        {
+            frmPuntuaciones frmPuntuaciones = new frmPuntuaciones(idGame, nombreJuego);
+            frmPuntuaciones.Show();
         }
     }
 }

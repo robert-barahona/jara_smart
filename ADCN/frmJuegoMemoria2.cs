@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ADCN.Data;
+using ADCN.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,7 +19,7 @@ namespace ADCN
         private int segundos = 0;
         private int total_segundos = 0;
         public string[] respuestas = new string[3] { "", "", "" };
-        Clases.Juego juego = new Clases.Juego();
+        private Clases.Juego juego = new Clases.Juego();
 
         public frmJuegoMemoria2()
         {
@@ -31,8 +33,9 @@ namespace ADCN
                 timer1.Enabled = true;
             }
             escribirTexto();
-            juego.nombre_juego = "Provincias del Ecuador";
+            juego.idJuego = 5;
             juego.puntuacion = 0;
+            juego.nombre_juego = "Provincias del Ecuador";
             juego.mostrarNivel(1);
         }
 
@@ -213,8 +216,9 @@ namespace ADCN
                         timer1.Stop();
                         this.Enabled = false;
                         puntaje_total = juego.gestionarPuntuacion(total_segundos);
-                        frmFinDeJuego finDeJuego = new frmFinDeJuego(Res.Obtuviste + " " + puntaje_total.ToString() + " " + Res.Puntos, juego.nombre_juego);
+                        frmFinDeJuego finDeJuego = new frmFinDeJuego(Res.Obtuviste + " " + puntaje_total.ToString() + " " + Res.Puntos, juego.idJuego, juego.nombre_juego);
                         finDeJuego.Show();
+                        juego.SavePointsAsync();
                         break;
                 }
             }

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ADCN.Data;
+using ADCN.Models;
 
 namespace ADCN
 {
@@ -16,7 +18,7 @@ namespace ADCN
         private int minutos = 0;
         private int segundos = 0;
         private int total_segundos = 0;
-        Clases.Juego juego = new Clases.Juego();
+        private Clases.Juego juego = new Clases.Juego();
 
         public frmJuegoAtencion2()
         {
@@ -30,8 +32,9 @@ namespace ADCN
                 timer1.Enabled = true;
             }
             escribirTexto();
-            juego.nombre_juego = "Dónde está pikachu";
+            juego.idJuego = 2;
             juego.puntuacion = 0;
+            juego.nombre_juego = "Dónde está pikachu";
             juego.mostrarNivel(1);
         }
 
@@ -85,15 +88,17 @@ namespace ADCN
             paseDeNivel.Show();
         }
 
-        private void pbxN6_Click(object sender, EventArgs e)
+        private async void pbxN6_Click(object sender, EventArgs e)
         {
             timer1.Stop();
             this.Enabled = false;
             juego.reproducirSonido("victory2");
             juego.puntuacion += 2000;
             puntaje_total = juego.gestionarPuntuacion(total_segundos);
-            frmFinDeJuego finDeJuego = new frmFinDeJuego(Res.Obtuviste + " " + puntaje_total.ToString() + " " + Res.Puntos, juego.nombre_juego);
+            frmFinDeJuego finDeJuego = new frmFinDeJuego(Res.Obtuviste + " " + puntaje_total.ToString() + " " + Res.Puntos, juego.idJuego, juego.nombre_juego);
             finDeJuego.Show();
+
+            juego.SavePointsAsync();
         }
 
         public void abrirSiguienteNivel(int nivel)

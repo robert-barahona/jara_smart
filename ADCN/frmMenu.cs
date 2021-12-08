@@ -18,9 +18,9 @@ namespace ADCN
         public string juego;
         public bool sonido = true;
 
-        public frmMenu(string nombre_est)
+        public frmMenu()
         {
-            this.nombre_est = nombre_est;
+            this.nombre_est = Clases.DesarrolloCognitivo.Instance().nombre_est;
             InitializeComponent();
         }
 
@@ -87,7 +87,7 @@ namespace ADCN
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            Clases.DesarrolloCognitivo des_cog = new Clases.DesarrolloCognitivo();
+            Clases.DesarrolloCognitivo des_cog = Clases.DesarrolloCognitivo.Instance();
             if (des_cog.cerrarAplicacion())
             {
                 Application.Exit();
@@ -186,6 +186,11 @@ namespace ADCN
         private void lblEncabezado_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

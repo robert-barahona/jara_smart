@@ -16,7 +16,7 @@ namespace ADCN
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Clases.DesarrolloCognitivo des_cog = new Clases.DesarrolloCognitivo();
+            Clases.DesarrolloCognitivo des_cog = Clases.DesarrolloCognitivo.Instance();
             des_cog.abrirVentanaPrincipal();
             Application.Run();
         }

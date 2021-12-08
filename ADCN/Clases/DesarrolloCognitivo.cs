@@ -8,9 +8,20 @@ namespace ADCN.Clases
 {
     class DesarrolloCognitivo
     {
-        private string nombre_est;
+        public string nombre_est;
+        private static DesarrolloCognitivo instance;
 
-        public DesarrolloCognitivo()
+        public static DesarrolloCognitivo Instance()
+        {
+            if(instance == null)
+            {
+                instance = new DesarrolloCognitivo();
+            }
+            return instance;
+        }
+
+
+        private DesarrolloCognitivo()
         {
 
         }
@@ -23,7 +34,7 @@ namespace ADCN.Clases
 
         public void mostrarMenu()
         {
-            frmMenu menu = new frmMenu(this.nombre_est);
+            frmMenu menu = new frmMenu();
             menu.Show();
         }
 
