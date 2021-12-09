@@ -102,8 +102,6 @@ namespace ADCN
 
         private void pbxLogoMaslow_Click(object sender, EventArgs e)
         {
-            Clases.Proceso proceso = new Clases.Proceso();
-            proceso.abrirPaginaMaslow();
         }
 
         private void pbxAyuda_Click(object sender, EventArgs e)
