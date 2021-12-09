@@ -71,16 +71,16 @@ namespace ADCN
 
         public void OrdenarPorMetodoBurbuja()
         {
-            int t;
+            Result result;
             for (int a = 1; a < resultList.Count; a++)
             {
                 for (int b = resultList.Count - 1; b >= a; b--)
                 {
                     if (resultList[b - 1].points < resultList[b].points)
                     {
-                        t = resultList[b - 1].points;
-                        resultList[b - 1].points = resultList[b].points;
-                        resultList[b].points = t;
+                        result = resultList[b - 1];
+                        resultList[b - 1] = resultList[b];
+                        resultList[b] = result;
                     }
                 }
             }

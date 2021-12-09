@@ -44,7 +44,7 @@ namespace ADCN
         {
             if ((lblSignificado.Text == "Negro" && color == "Color [Black]") || (lblSignificado.Text == "Azul" && color == "Color [Blue]") || (lblSignificado.Text == "Rojo" && color == "Color [Red]") || (lblSignificado.Text == "Amarillo" && color == "Color [Gold]") || (lblSignificado.Text == "Morado" && color == "Color [DarkViolet]") || (lblSignificado.Text == "Rosa" && color == "Color [Violet]") || (lblSignificado.Text == "Naranja" && color == "Color [Orange]") || (lblSignificado.Text == "Celeste" && color == "Color [Cyan]") || (lblSignificado.Text == "Verde" && color == "Color [Green]") || (lblSignificado.Text == "Café" && color == "Color [Chocolate]"))
             {
-                juego.puntuacion += 1000;
+                juego.puntuacion += 2000;
                 juego.reproducirSonido("ring");
                 pbxCheck.Image = Image.FromFile("..\\..\\Resources\\lista.png");
             }
