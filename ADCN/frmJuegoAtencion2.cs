@@ -43,7 +43,7 @@ namespace ADCN
             juego.reproducirSonido("ring");
             timer1.Stop();
             this.Enabled = false;
-            juego.puntuacion += 2000;
+            juego.puntuacion += 500;
             frmPaseDeNivel paseDeNivel = new frmPaseDeNivel(Res.Avanzar_Nivel_Atencion2 + " 2", juego.nombre_juego);
             paseDeNivel.Show();
         }
@@ -53,7 +53,7 @@ namespace ADCN
             juego.reproducirSonido("ring");
             timer1.Stop();
             this.Enabled = false;
-            juego.puntuacion += 2000;
+            juego.puntuacion += 500;
             frmPaseDeNivel paseDeNivel = new frmPaseDeNivel(Res.Avanzar_Nivel_Atencion2 + " 3", juego.nombre_juego);
             paseDeNivel.Show();
         }
@@ -63,7 +63,7 @@ namespace ADCN
             juego.reproducirSonido("ring");
             timer1.Stop();
             this.Enabled = false;
-            juego.puntuacion += 2000;
+            juego.puntuacion += 500;
             frmPaseDeNivel paseDeNivel = new frmPaseDeNivel(Res.Avanzar_Nivel_Atencion2 + " 4", juego.nombre_juego);
             paseDeNivel.Show();
         }
@@ -73,7 +73,7 @@ namespace ADCN
             juego.reproducirSonido("ring");
             timer1.Stop();
             this.Enabled = false;
-            juego.puntuacion += 2000;
+            juego.puntuacion += 500;
             frmPaseDeNivel paseDeNivel = new frmPaseDeNivel(Res.Avanzar_Nivel_Atencion2 + " 5", juego.nombre_juego);
             paseDeNivel.Show();
         }
@@ -83,7 +83,7 @@ namespace ADCN
             juego.reproducirSonido("ring");
             timer1.Stop();
             this.Enabled = false;
-            juego.puntuacion += 2000;
+            juego.puntuacion += 500;
             frmPaseDeNivel paseDeNivel = new frmPaseDeNivel(Res.Avanzar_Nivel_Atencion2 + " 6", juego.nombre_juego);
             paseDeNivel.Show();
         }
@@ -93,7 +93,7 @@ namespace ADCN
             timer1.Stop();
             this.Enabled = false;
             juego.reproducirSonido("victory2");
-            juego.puntuacion += 2000;
+            juego.puntuacion += 500;
             puntaje_total = juego.gestionarPuntuacion(total_segundos);
             frmFinDeJuego finDeJuego = new frmFinDeJuego(Res.Obtuviste + " " + puntaje_total.ToString() + " " + Res.Puntos, juego.idJuego, juego.nombre_juego);
             finDeJuego.Show();

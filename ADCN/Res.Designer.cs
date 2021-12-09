@@ -223,7 +223,7 @@ namespace ADCN {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Si usted desea abrir el sitio web de Maslow School, usted debe hacer clic en el logo de la institución que se encuentra en la parte superior del menú..
+        ///   Busca una cadena traducida similar a Para ver las puntuaciones que se han registrado, se debe hacer clic en el botón naranja que se encuentra abajo de cada juego.
         /// </summary>
         internal static string Ayuda6 {
             get {

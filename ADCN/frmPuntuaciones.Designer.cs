@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.dgvResults = new System.Windows.Forms.DataGridView();
-            this.lblJuego = new System.Windows.Forms.Label();
-            this.btnAceptar = new System.Windows.Forms.Button();
             this.position = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentPoints = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblJuego = new System.Windows.Forms.Label();
+            this.btnAceptar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResults)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,45 +50,15 @@
             this.position,
             this.studentName,
             this.studentPoints});
-            this.dgvResults.Location = new System.Drawing.Point(12, 76);
+            this.dgvResults.Location = new System.Drawing.Point(9, 62);
+            this.dgvResults.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvResults.Name = "dgvResults";
             this.dgvResults.ReadOnly = true;
             this.dgvResults.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvResults.RowHeadersVisible = false;
             this.dgvResults.RowTemplate.Height = 24;
-            this.dgvResults.Size = new System.Drawing.Size(319, 198);
+            this.dgvResults.Size = new System.Drawing.Size(239, 161);
             this.dgvResults.TabIndex = 25;
-            // 
-            // lblJuego
-            // 
-            this.lblJuego.BackColor = System.Drawing.Color.Transparent;
-            this.lblJuego.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblJuego.ForeColor = System.Drawing.Color.White;
-            this.lblJuego.Location = new System.Drawing.Point(13, 9);
-            this.lblJuego.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblJuego.Name = "lblJuego";
-            this.lblJuego.Size = new System.Drawing.Size(318, 53);
-            this.lblJuego.TabIndex = 26;
-            this.lblJuego.Text = "Puntuaciones";
-            this.lblJuego.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnAceptar
-            // 
-            this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(180)))), ((int)(((byte)(99)))));
-            this.btnAceptar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAceptar.FlatAppearance.BorderSize = 0;
-            this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptar.ForeColor = System.Drawing.Color.White;
-            this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAceptar.Location = new System.Drawing.Point(111, 281);
-            this.btnAceptar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(112, 49);
-            this.btnAceptar.TabIndex = 36;
-            this.btnAceptar.Text = "Aceptar";
-            this.btnAceptar.UseVisualStyleBackColor = false;
-            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // position
             // 
@@ -114,15 +84,45 @@
             this.studentPoints.ReadOnly = true;
             this.studentPoints.Width = 90;
             // 
+            // lblJuego
+            // 
+            this.lblJuego.BackColor = System.Drawing.Color.Transparent;
+            this.lblJuego.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJuego.ForeColor = System.Drawing.Color.White;
+            this.lblJuego.Location = new System.Drawing.Point(10, 7);
+            this.lblJuego.Name = "lblJuego";
+            this.lblJuego.Size = new System.Drawing.Size(238, 43);
+            this.lblJuego.TabIndex = 26;
+            this.lblJuego.Text = "Puntuaciones";
+            this.lblJuego.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnAceptar
+            // 
+            this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(180)))), ((int)(((byte)(99)))));
+            this.btnAceptar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAceptar.FlatAppearance.BorderSize = 0;
+            this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptar.ForeColor = System.Drawing.Color.White;
+            this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAceptar.Location = new System.Drawing.Point(83, 228);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(84, 40);
+            this.btnAceptar.TabIndex = 36;
+            this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.UseVisualStyleBackColor = false;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
+            // 
             // frmPuntuaciones
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(343, 340);
+            this.ClientSize = new System.Drawing.Size(257, 276);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.lblJuego);
             this.Controls.Add(this.dgvResults);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmPuntuaciones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPuntuaciones";

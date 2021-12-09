@@ -44,6 +44,8 @@ namespace ADCN
             dgvResults.ColumnHeadersDefaultCellStyle.BackColor = menu.lblEncabezado.BackColor;
             dgvResults.DefaultCellStyle.BackColor = menu.lblEncabezado.BackColor;
             dgvResults.BackgroundColor = menu.lblEncabezado.BackColor;
+            dgvResults.DefaultCellStyle.SelectionBackColor = menu.lblEncabezado.BackColor;
+            dgvResults.DefaultCellStyle.SelectionForeColor = Color.Black;
             btnAceptar.BackColor = menu.pnlTop.BackColor;
         }
 

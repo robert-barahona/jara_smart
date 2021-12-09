@@ -29,17 +29,12 @@ namespace ADCN
 
         private void escribirTexto()
         {
-            lblQueEdadTienes.Text = Res.Que_edad_tienes;
-            lbl10Anios.Text = Res._10_Años;
-            lbl11Anios.Text = Res._11_Años;
-            lbl12Anios.Text = Res._12_Años;
             btnJuego1.Text = Res.Jugar;
             btnJuego2.Text = Res.Jugar;
             btnJuego3.Text = Res.Jugar;
             btnPuntosJuego1.Text = Res.Puntuaciones;
             btnPuntosJuego2.Text = Res.Puntuaciones;
             btnPuntosJuego3.Text = Res.Puntuaciones;
-            lblRecuerdaQue.Text = Res.Recuerda_que_la_edad;
             switch (menu.juego)
             {
                 case "atencion":
