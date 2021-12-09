@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnEdad11 = new System.Windows.Forms.Button();
-            this.btnEdad10 = new System.Windows.Forms.Button();
-            this.btnEdad12 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pbxJuego3 = new System.Windows.Forms.PictureBox();
             this.pbxJuego2 = new System.Windows.Forms.PictureBox();
@@ -43,68 +40,23 @@
             this.pbxJuego1 = new System.Windows.Forms.PictureBox();
             this.lblRecuerdaQue = new System.Windows.Forms.Label();
             this.lblQueEdadTienes = new System.Windows.Forms.Label();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnJuego1 = new System.Windows.Forms.Button();
+            this.btnPuntosJuego1 = new System.Windows.Forms.Button();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnPuntosJuego2 = new System.Windows.Forms.Button();
+            this.btnJuego2 = new System.Windows.Forms.Button();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnPuntosJuego3 = new System.Windows.Forms.Button();
+            this.btnJuego3 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxJuego3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxJuego2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxJuego1)).BeginInit();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnEdad11
-            // 
-            this.btnEdad11.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnEdad11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(180)))), ((int)(((byte)(99)))));
-            this.btnEdad11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEdad11.FlatAppearance.BorderSize = 0;
-            this.btnEdad11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
-            this.btnEdad11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEdad11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdad11.ForeColor = System.Drawing.Color.White;
-            this.btnEdad11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEdad11.Location = new System.Drawing.Point(450, 356);
-            this.btnEdad11.Name = "btnEdad11";
-            this.btnEdad11.Size = new System.Drawing.Size(108, 34);
-            this.btnEdad11.TabIndex = 30;
-            this.btnEdad11.Text = "JUGAR";
-            this.btnEdad11.UseVisualStyleBackColor = false;
-            this.btnEdad11.Click += new System.EventHandler(this.btnEdad11_Click);
-            // 
-            // btnEdad10
-            // 
-            this.btnEdad10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnEdad10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(180)))), ((int)(((byte)(99)))));
-            this.btnEdad10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEdad10.FlatAppearance.BorderSize = 0;
-            this.btnEdad10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
-            this.btnEdad10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEdad10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdad10.ForeColor = System.Drawing.Color.White;
-            this.btnEdad10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEdad10.Location = new System.Drawing.Point(114, 356);
-            this.btnEdad10.Name = "btnEdad10";
-            this.btnEdad10.Size = new System.Drawing.Size(108, 34);
-            this.btnEdad10.TabIndex = 31;
-            this.btnEdad10.Text = "JUGAR";
-            this.btnEdad10.UseVisualStyleBackColor = false;
-            this.btnEdad10.Click += new System.EventHandler(this.btnEdad10_Click);
-            // 
-            // btnEdad12
-            // 
-            this.btnEdad12.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnEdad12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(180)))), ((int)(((byte)(99)))));
-            this.btnEdad12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEdad12.FlatAppearance.BorderSize = 0;
-            this.btnEdad12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
-            this.btnEdad12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEdad12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdad12.ForeColor = System.Drawing.Color.White;
-            this.btnEdad12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEdad12.Location = new System.Drawing.Point(786, 356);
-            this.btnEdad12.Name = "btnEdad12";
-            this.btnEdad12.Size = new System.Drawing.Size(110, 34);
-            this.btnEdad12.TabIndex = 32;
-            this.btnEdad12.Text = "JUGAR";
-            this.btnEdad12.UseVisualStyleBackColor = false;
-            this.btnEdad12.Click += new System.EventHandler(this.btnEdad12_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -112,6 +64,8 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.pbxJuego3, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.pbxJuego2, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.lblJuego3, 2, 1);
@@ -120,10 +74,8 @@
             this.tableLayoutPanel1.Controls.Add(this.lbl12Anios, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.lbl11Anios, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.lbl10Anios, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnEdad10, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.btnEdad11, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.btnEdad12, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.pbxJuego1, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 3);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(30, 35);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
@@ -258,6 +210,177 @@
             this.lblQueEdadTienes.Text = "¿Qué edad tienes?";
             this.lblQueEdadTienes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Controls.Add(this.btnPuntosJuego1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnJuego1, 0, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 356);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(330, 38);
+            this.tableLayoutPanel2.TabIndex = 39;
+            // 
+            // btnJuego1
+            // 
+            this.btnJuego1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnJuego1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(180)))), ((int)(((byte)(99)))));
+            this.btnJuego1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnJuego1.FlatAppearance.BorderSize = 0;
+            this.btnJuego1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnJuego1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnJuego1.ForeColor = System.Drawing.Color.White;
+            this.btnJuego1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnJuego1.Location = new System.Drawing.Point(3, 3);
+            this.btnJuego1.Name = "btnJuego1";
+            this.btnJuego1.Size = new System.Drawing.Size(159, 32);
+            this.btnJuego1.TabIndex = 31;
+            this.btnJuego1.Text = "JUGAR";
+            this.btnJuego1.UseVisualStyleBackColor = false;
+            this.btnJuego1.Click += new System.EventHandler(this.btnJuego1_Click);
+            // 
+            // btnPuntosJuego1
+            // 
+            this.btnPuntosJuego1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPuntosJuego1.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnPuntosJuego1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPuntosJuego1.FlatAppearance.BorderSize = 0;
+            this.btnPuntosJuego1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPuntosJuego1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPuntosJuego1.ForeColor = System.Drawing.Color.White;
+            this.btnPuntosJuego1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPuntosJuego1.Location = new System.Drawing.Point(168, 3);
+            this.btnPuntosJuego1.Name = "btnPuntosJuego1";
+            this.btnPuntosJuego1.Size = new System.Drawing.Size(159, 32);
+            this.btnPuntosJuego1.TabIndex = 32;
+            this.btnPuntosJuego1.Text = "PUNTUACIONES";
+            this.btnPuntosJuego1.UseVisualStyleBackColor = false;
+            this.btnPuntosJuego1.Click += new System.EventHandler(this.btnPuntosJuego1_Click);
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Controls.Add(this.btnPuntosJuego2, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnJuego2, 0, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(339, 356);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(330, 38);
+            this.tableLayoutPanel3.TabIndex = 40;
+            // 
+            // btnPuntosJuego2
+            // 
+            this.btnPuntosJuego2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPuntosJuego2.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnPuntosJuego2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPuntosJuego2.FlatAppearance.BorderSize = 0;
+            this.btnPuntosJuego2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPuntosJuego2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPuntosJuego2.ForeColor = System.Drawing.Color.White;
+            this.btnPuntosJuego2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPuntosJuego2.Location = new System.Drawing.Point(168, 3);
+            this.btnPuntosJuego2.Name = "btnPuntosJuego2";
+            this.btnPuntosJuego2.Size = new System.Drawing.Size(159, 32);
+            this.btnPuntosJuego2.TabIndex = 32;
+            this.btnPuntosJuego2.Text = "PUNTUACIONES";
+            this.btnPuntosJuego2.UseVisualStyleBackColor = false;
+            this.btnPuntosJuego2.Click += new System.EventHandler(this.btnPuntosJuego2_Click);
+            // 
+            // btnJuego2
+            // 
+            this.btnJuego2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnJuego2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(180)))), ((int)(((byte)(99)))));
+            this.btnJuego2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnJuego2.FlatAppearance.BorderSize = 0;
+            this.btnJuego2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnJuego2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnJuego2.ForeColor = System.Drawing.Color.White;
+            this.btnJuego2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnJuego2.Location = new System.Drawing.Point(3, 3);
+            this.btnJuego2.Name = "btnJuego2";
+            this.btnJuego2.Size = new System.Drawing.Size(159, 32);
+            this.btnJuego2.TabIndex = 31;
+            this.btnJuego2.Text = "JUGAR";
+            this.btnJuego2.UseVisualStyleBackColor = false;
+            this.btnJuego2.Click += new System.EventHandler(this.btnJuego2_Click);
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.btnPuntosJuego3, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.btnJuego3, 0, 0);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(675, 356);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(332, 38);
+            this.tableLayoutPanel4.TabIndex = 41;
+            // 
+            // btnPuntosJuego3
+            // 
+            this.btnPuntosJuego3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPuntosJuego3.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnPuntosJuego3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPuntosJuego3.FlatAppearance.BorderSize = 0;
+            this.btnPuntosJuego3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPuntosJuego3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPuntosJuego3.ForeColor = System.Drawing.Color.White;
+            this.btnPuntosJuego3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPuntosJuego3.Location = new System.Drawing.Point(169, 3);
+            this.btnPuntosJuego3.Name = "btnPuntosJuego3";
+            this.btnPuntosJuego3.Size = new System.Drawing.Size(160, 32);
+            this.btnPuntosJuego3.TabIndex = 32;
+            this.btnPuntosJuego3.Text = "PUNTUACIONES";
+            this.btnPuntosJuego3.UseVisualStyleBackColor = false;
+            this.btnPuntosJuego3.Click += new System.EventHandler(this.btnPuntosJuego3_Click);
+            // 
+            // btnJuego3
+            // 
+            this.btnJuego3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnJuego3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(180)))), ((int)(((byte)(99)))));
+            this.btnJuego3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnJuego3.FlatAppearance.BorderSize = 0;
+            this.btnJuego3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnJuego3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnJuego3.ForeColor = System.Drawing.Color.White;
+            this.btnJuego3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnJuego3.Location = new System.Drawing.Point(3, 3);
+            this.btnJuego3.Name = "btnJuego3";
+            this.btnJuego3.Size = new System.Drawing.Size(160, 32);
+            this.btnJuego3.TabIndex = 31;
+            this.btnJuego3.Text = "JUGAR";
+            this.btnJuego3.UseVisualStyleBackColor = false;
+            this.btnJuego3.Click += new System.EventHandler(this.btnJuego3_Click);
+            // 
             // frmMenuEdades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -275,14 +398,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxJuego3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxJuego2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxJuego1)).EndInit();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button btnEdad11;
-        private System.Windows.Forms.Button btnEdad10;
-        private System.Windows.Forms.Button btnEdad12;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label lbl12Anios;
         private System.Windows.Forms.Label lbl11Anios;
@@ -295,5 +418,14 @@
         private System.Windows.Forms.PictureBox pbxJuego3;
         private System.Windows.Forms.PictureBox pbxJuego2;
         private System.Windows.Forms.PictureBox pbxJuego1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Button btnPuntosJuego3;
+        private System.Windows.Forms.Button btnJuego3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.Button btnPuntosJuego2;
+        private System.Windows.Forms.Button btnJuego2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Button btnPuntosJuego1;
+        private System.Windows.Forms.Button btnJuego1;
     }
 }

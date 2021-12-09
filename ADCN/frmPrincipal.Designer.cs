@@ -33,18 +33,23 @@
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.pnlLogin = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.btnEntrar = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
+            this.lblBienvenido = new System.Windows.Forms.Label();
+            this.btnEntrar = new System.Windows.Forms.Button();
+            this.lblNombre = new System.Windows.Forms.Label();
             this.pbxLogo = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblIdioma = new System.Windows.Forms.Label();
+            this.pbxIdiomaIngles = new System.Windows.Forms.PictureBox();
+            this.pbxIdiomaEspañol = new System.Windows.Forms.PictureBox();
             this.panel0.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.pnlLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxIdiomaIngles)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxIdiomaEspañol)).BeginInit();
             this.SuspendLayout();
             // 
             // panel0
@@ -94,29 +99,37 @@
             this.pnlLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(235)))), ((int)(((byte)(198)))));
             this.pnlLogin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlLogin.Controls.Add(this.txtNombre);
-            this.pnlLogin.Controls.Add(this.label5);
+            this.pnlLogin.Controls.Add(this.lblBienvenido);
             this.pnlLogin.Controls.Add(this.btnEntrar);
-            this.pnlLogin.Controls.Add(this.label7);
+            this.pnlLogin.Controls.Add(this.lblNombre);
             this.pnlLogin.Location = new System.Drawing.Point(438, 187);
             this.pnlLogin.Name = "pnlLogin";
             this.pnlLogin.Size = new System.Drawing.Size(377, 196);
             this.pnlLogin.TabIndex = 10;
             // 
-            // label7
+            // txtNombre
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(120, 77);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(47, 13);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Nombre:";
+            this.txtNombre.Location = new System.Drawing.Point(123, 94);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(134, 20);
+            this.txtNombre.TabIndex = 9;
+            // 
+            // lblBienvenido
+            // 
+            this.lblBienvenido.AutoSize = true;
+            this.lblBienvenido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBienvenido.Location = new System.Drawing.Point(139, 31);
+            this.lblBienvenido.Name = "lblBienvenido";
+            this.lblBienvenido.Size = new System.Drawing.Size(97, 20);
+            this.lblBienvenido.TabIndex = 0;
+            this.lblBienvenido.Text = "Bienvenido";
             // 
             // btnEntrar
             // 
             this.btnEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(180)))), ((int)(((byte)(99)))));
             this.btnEntrar.FlatAppearance.BorderSize = 0;
-            this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnEntrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEntrar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrar.ForeColor = System.Drawing.Color.White;
             this.btnEntrar.Location = new System.Drawing.Point(123, 139);
             this.btnEntrar.Name = "btnEntrar";
@@ -126,22 +139,14 @@
             this.btnEntrar.UseVisualStyleBackColor = false;
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
-            // label5
+            // lblNombre
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(139, 31);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 20);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Bienvenido";
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(123, 94);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(134, 20);
-            this.txtNombre.TabIndex = 9;
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(120, 77);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(47, 13);
+            this.lblNombre.TabIndex = 3;
+            this.lblNombre.Text = "Nombre:";
             // 
             // pbxLogo
             // 
@@ -159,6 +164,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(180)))), ((int)(((byte)(99)))));
+            this.panel1.Controls.Add(this.lblIdioma);
+            this.panel1.Controls.Add(this.pbxIdiomaIngles);
+            this.panel1.Controls.Add(this.pbxIdiomaEspañol);
             this.panel1.Controls.Add(this.pbxLogo);
             this.panel1.Controls.Add(this.pnlLogin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -166,6 +174,41 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1252, 540);
             this.panel1.TabIndex = 23;
+            // 
+            // lblIdioma
+            // 
+            this.lblIdioma.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIdioma.ForeColor = System.Drawing.Color.White;
+            this.lblIdioma.Location = new System.Drawing.Point(1166, 468);
+            this.lblIdioma.Name = "lblIdioma";
+            this.lblIdioma.Size = new System.Drawing.Size(76, 20);
+            this.lblIdioma.TabIndex = 31;
+            this.lblIdioma.Text = "Idioma";
+            this.lblIdioma.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pbxIdiomaIngles
+            // 
+            this.pbxIdiomaIngles.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxIdiomaIngles.Image = ((System.Drawing.Image)(resources.GetObject("pbxIdiomaIngles.Image")));
+            this.pbxIdiomaIngles.Location = new System.Drawing.Point(1207, 491);
+            this.pbxIdiomaIngles.Name = "pbxIdiomaIngles";
+            this.pbxIdiomaIngles.Size = new System.Drawing.Size(35, 37);
+            this.pbxIdiomaIngles.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxIdiomaIngles.TabIndex = 30;
+            this.pbxIdiomaIngles.TabStop = false;
+            this.pbxIdiomaIngles.Click += new System.EventHandler(this.pbxIdiomaIngles_Click);
+            // 
+            // pbxIdiomaEspañol
+            // 
+            this.pbxIdiomaEspañol.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxIdiomaEspañol.Image = ((System.Drawing.Image)(resources.GetObject("pbxIdiomaEspañol.Image")));
+            this.pbxIdiomaEspañol.Location = new System.Drawing.Point(1166, 491);
+            this.pbxIdiomaEspañol.Name = "pbxIdiomaEspañol";
+            this.pbxIdiomaEspañol.Size = new System.Drawing.Size(35, 37);
+            this.pbxIdiomaEspañol.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxIdiomaEspañol.TabIndex = 29;
+            this.pbxIdiomaEspañol.TabStop = false;
+            this.pbxIdiomaEspañol.Click += new System.EventHandler(this.pbxIdiomaEspañol_Click);
             // 
             // frmPrincipal
             // 
@@ -187,6 +230,8 @@
             this.pnlLogin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbxIdiomaIngles)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxIdiomaEspañol)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -198,11 +243,14 @@
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.Panel pnlLogin;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblBienvenido;
         private System.Windows.Forms.Button btnEntrar;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.PictureBox pbxLogo;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblIdioma;
+        private System.Windows.Forms.PictureBox pbxIdiomaIngles;
+        private System.Windows.Forms.PictureBox pbxIdiomaEspañol;
     }
 }
 

@@ -56,6 +56,8 @@ namespace ADCN
         private void pbxActivarSonido_Click(object sender, EventArgs e)
         {
             proceso.activar_desactivar_Sonido(true);
+            Clases.Juego juego = new Clases.Juego();
+            juego.reproducirSonido("points");
             setImages();
         }
 

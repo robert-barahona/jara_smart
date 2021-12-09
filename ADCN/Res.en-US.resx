@@ -166,10 +166,10 @@
     <value>Find the letters 'T', 'K' and the number '8'</value>
   </data>
   <data name="Elegir_la_letra_correcta" xml:space="preserve">
-    <value>Game: "Find the correct letter"</value>
+    <value>"Find the correct letter"</value>
   </data>
   <data name="Donde_esta_pikachu" xml:space="preserve">
-    <value>Game: "Where is Pikachu?"</value>
+    <value>"Where is Pikachu?"</value>
   </data>
   <data name="Tiempo" xml:space="preserve">
     <value>Time:</value>
@@ -199,13 +199,13 @@
     <value>Level 6</value>
   </data>
   <data name="Colores_y_Significados" xml:space="preserve">
-    <value>Game: "Colors and Meanings"</value>
+    <value>"Colors and Meanings"</value>
   </data>
   <data name="Tablas_de_multiplicar" xml:space="preserve">
     <value>Game: "Multiplication Tables"</value>
   </data>
   <data name="Provincias_del_Ecuador" xml:space="preserve">
-    <value>Game: "Provinces of Ecuador"</value>
+    <value>"Provinces of Ecuador"</value>
   </data>
   <data name="Habia_una_vez" xml:space="preserve">
     <value>Game: "Once Upon a Time"</value>
@@ -286,7 +286,7 @@
     <value>Settings</value>
   </data>
   <data name="Jugar" xml:space="preserve">
-    <value>Play</value>
+    <value>PLAY</value>
   </data>
   <data name="Comprobar" xml:space="preserve">
     <value>Check</value>
@@ -434,5 +434,17 @@
   </data>
   <data name="Pistas_disponibles" xml:space="preserve">
     <value>The clues will be available after you complete the first sentence</value>
+  </data>
+  <data name="Puntuaciones" xml:space="preserve">
+    <value>POINTS</value>
+  </data>
+  <data name="Nombre" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Puntuacion" xml:space="preserve">
+    <value>Points</value>
+  </data>
+  <data name="Bienvenido" xml:space="preserve">
+    <value>Welcome</value>
   </data>
 </root>

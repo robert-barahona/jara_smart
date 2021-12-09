@@ -46,6 +46,7 @@ namespace ADCN
         private void escribirTexto()
         {
             lblEncabezado.Text = Res.Fin_del_juego;
+            btnPuntuaciones.Text = Res.Puntuaciones;
             btnVolverAJugar.Text = Res.Aceptar;
             lblMensaje.Text = mensaje;
             btnVolverAJugar.Text = Res.Volver_a_jugar;

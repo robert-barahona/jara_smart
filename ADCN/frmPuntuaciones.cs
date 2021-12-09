@@ -29,7 +29,15 @@ namespace ADCN
             this.Close();
         }
 
-        private async void frmPuntuaciones_Load(object sender, EventArgs e)
+        private void inicilizarTextos()
+        {
+            btnAceptar.Text = Res.Aceptar;
+            lblJuego.Text = Res.Puntuaciones + "\n" + nombreJuego;
+            dgvResults.Columns[1].HeaderText = Res.Nombre;
+            dgvResults.Columns[2].HeaderText = Res.Puntuacion;
+        }
+
+        private void pintarFormulario()
         {
             frmMenu menu = Application.OpenForms.OfType<frmMenu>().SingleOrDefault();
             this.BackColor = menu.pnlMenu.BackColor;
@@ -37,8 +45,13 @@ namespace ADCN
             dgvResults.DefaultCellStyle.BackColor = menu.lblEncabezado.BackColor;
             dgvResults.BackgroundColor = menu.lblEncabezado.BackColor;
             btnAceptar.BackColor = menu.pnlTop.BackColor;
+        }
 
-            lblJuego.Text = "Puntuaciones de\n" + nombreJuego;
+        private async void frmPuntuaciones_Load(object sender, EventArgs e)
+        {
+            inicilizarTextos();
+            pintarFormulario();
+
             var i = 0;
             dgvResults.Rows.Clear();
             resultList = await Data.SQLiteHelper.Instance().GetResultsByGame(idGame);

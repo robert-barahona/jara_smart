@@ -96,7 +96,6 @@
             this.btnPista.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(180)))), ((int)(((byte)(99)))));
             this.btnPista.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPista.FlatAppearance.BorderSize = 0;
-            this.btnPista.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gold;
             this.btnPista.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPista.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPista.ForeColor = System.Drawing.Color.White;

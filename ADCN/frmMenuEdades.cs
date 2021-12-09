@@ -27,7 +27,41 @@ namespace ADCN
             escribirTexto();
         }
 
-        private void btnEdad10_Click(object sender, EventArgs e)
+        private void escribirTexto()
+        {
+            lblQueEdadTienes.Text = Res.Que_edad_tienes;
+            lbl10Anios.Text = Res._10_Años;
+            lbl11Anios.Text = Res._11_Años;
+            lbl12Anios.Text = Res._12_Años;
+            btnJuego1.Text = Res.Jugar;
+            btnJuego2.Text = Res.Jugar;
+            btnJuego3.Text = Res.Jugar;
+            btnPuntosJuego1.Text = Res.Puntuaciones;
+            btnPuntosJuego2.Text = Res.Puntuaciones;
+            btnPuntosJuego3.Text = Res.Puntuaciones;
+            lblRecuerdaQue.Text = Res.Recuerda_que_la_edad;
+            switch (menu.juego)
+            {
+                case "atencion":
+                    lblJuego1.Text = Res.Elegir_la_letra_correcta;
+                    lblJuego2.Text = Res.Donde_esta_pikachu;
+                    lblJuego3.Text = Res.Colores_y_Significados;
+                    pbxJuego1.Image = Image.FromFile("..\\..\\Resources\\juego_a1.jpg");
+                    pbxJuego2.Image = Image.FromFile("..\\..\\Resources\\juego_a2.jpg");
+                    pbxJuego3.Image = Image.FromFile("..\\..\\Resources\\juego_a3.jpg");
+                    break;
+                case "memoria":
+                    lblJuego1.Text = Res.Tablas_de_multiplicar;
+                    lblJuego2.Text = Res.Provincias_del_Ecuador;
+                    lblJuego3.Text = Res.Habia_una_vez;
+                    pbxJuego1.Image = Image.FromFile("..\\..\\Resources\\juego_m1.jpg");
+                    pbxJuego2.Image = Image.FromFile("..\\..\\Resources\\juego_m2.jpg");
+                    pbxJuego3.Image = Image.FromFile("..\\..\\Resources\\juego_m3.jpg");
+                    break;
+            }
+        }
+
+        private void btnJuego1_Click(object sender, EventArgs e)
         {
             menu.AbrirFormulario<frmInicio>();
             frmInicio inicio = Application.OpenForms.OfType<frmInicio>().SingleOrDefault();
@@ -50,7 +84,7 @@ namespace ADCN
             }
         }
 
-        private void btnEdad11_Click(object sender, EventArgs e)
+        private void btnJuego2_Click(object sender, EventArgs e)
         {
             menu.AbrirFormulario<frmInicio>();
             frmInicio inicio = Application.OpenForms.OfType<frmInicio>().SingleOrDefault();
@@ -73,7 +107,7 @@ namespace ADCN
             }
         }
 
-        private void btnEdad12_Click(object sender, EventArgs e)
+        private void btnJuego3_Click(object sender, EventArgs e)
         {
             menu.AbrirFormulario<frmInicio>();
             frmInicio inicio = Application.OpenForms.OfType<frmInicio>().SingleOrDefault();
@@ -96,35 +130,22 @@ namespace ADCN
             }
         }
 
-        private void escribirTexto()
+        private void btnPuntosJuego1_Click(object sender, EventArgs e)
         {
-            lblQueEdadTienes.Text = Res.Que_edad_tienes;
-            lbl10Anios.Text = Res._10_Años;
-            lbl11Anios.Text = Res._11_Años;
-            lbl12Anios.Text = Res._12_Años;
-            btnEdad10.Text = Res.Jugar;
-            btnEdad11.Text = Res.Jugar;
-            btnEdad12.Text = Res.Jugar;
-            lblRecuerdaQue.Text = Res.Recuerda_que_la_edad;
-            switch (menu.juego)
-            {
-                case "atencion":
-                    lblJuego1.Text = Res.Elegir_la_letra_correcta;
-                    lblJuego2.Text = Res.Donde_esta_pikachu;
-                    lblJuego3.Text = Res.Colores_y_Significados;
-                    pbxJuego1.Image = Image.FromFile("..\\..\\Resources\\juego_a1.jpg");
-                    pbxJuego2.Image = Image.FromFile("..\\..\\Resources\\juego_a2.jpg");
-                    pbxJuego3.Image = Image.FromFile("..\\..\\Resources\\juego_a3.jpg");
-                    break;
-                case "memoria":
-                    lblJuego1.Text = Res.Tablas_de_multiplicar;
-                    lblJuego2.Text = Res.Provincias_del_Ecuador;
-                    lblJuego3.Text = Res.Habia_una_vez;
-                    pbxJuego1.Image = Image.FromFile("..\\..\\Resources\\juego_m1.jpg");
-                    pbxJuego2.Image = Image.FromFile("..\\..\\Resources\\juego_m2.jpg");
-                    pbxJuego3.Image = Image.FromFile("..\\..\\Resources\\juego_m3.jpg");
-                    break;
-            }
+            frmPuntuaciones frmPuntuaciones = new frmPuntuaciones(menu.juego == "atencion" ? 1 : 4, menu.juego == "atencion" ? Res.Elegir_la_letra_correcta : Res.Tablas_de_multiplicar);
+            frmPuntuaciones.Show();
+        }
+
+        private void btnPuntosJuego2_Click(object sender, EventArgs e)
+        {
+            frmPuntuaciones frmPuntuaciones = new frmPuntuaciones(menu.juego == "atencion" ? 2 : 5, menu.juego == "atencion" ? Res.Donde_esta_pikachu : Res.Provincias_del_Ecuador);
+            frmPuntuaciones.Show();
+        }
+
+        private void btnPuntosJuego3_Click(object sender, EventArgs e)
+        {
+            frmPuntuaciones frmPuntuaciones = new frmPuntuaciones(menu.juego == "atencion" ? 3 : 6, menu.juego == "atencion" ? Res.Colores_y_Significados : Res.Habia_una_vez);
+            frmPuntuaciones.Show();
         }
     }
 }

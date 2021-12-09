@@ -166,10 +166,10 @@
     <value>Encuentra las letras 'T', 'K' y el número '8'</value>
   </data>
   <data name="Elegir_la_letra_correcta" xml:space="preserve">
-    <value>Juego: "Elegir la letra correcta"</value>
+    <value>"Elegir la letra correcta"</value>
   </data>
   <data name="Donde_esta_pikachu" xml:space="preserve">
-    <value>Juego: "¿Dónde está Pikachu?"</value>
+    <value>"¿Dónde está Pikachu?"</value>
   </data>
   <data name="Tiempo" xml:space="preserve">
     <value>Tiempo:</value>
@@ -199,13 +199,13 @@
     <value>Nivel 6</value>
   </data>
   <data name="Colores_y_Significados" xml:space="preserve">
-    <value>Juego: "Colores y Significados"</value>
+    <value>"Colores y Significados"</value>
   </data>
   <data name="Tablas_de_multiplicar" xml:space="preserve">
     <value>Juego: "Tablas de multiplicar"</value>
   </data>
   <data name="Provincias_del_Ecuador" xml:space="preserve">
-    <value>Juego: "Provincias del Ecuador"</value>
+    <value>"Provincias del Ecuador"</value>
   </data>
   <data name="Habia_una_vez" xml:space="preserve">
     <value>Juego: "Había una vez"</value>
@@ -286,7 +286,7 @@
     <value>Configuración</value>
   </data>
   <data name="Jugar" xml:space="preserve">
-    <value>Jugar</value>
+    <value>JUGAR</value>
   </data>
   <data name="Comprobar" xml:space="preserve">
     <value>Comprobar</value>
@@ -434,5 +434,17 @@
   </data>
   <data name="Pistas_disponibles" xml:space="preserve">
     <value>Las pistas estarán disponibles después de que completes la primera frase</value>
+  </data>
+  <data name="Puntuaciones" xml:space="preserve">
+    <value>PUNTUACIONES</value>
+  </data>
+  <data name="Nombre" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="Puntuacion" xml:space="preserve">
+    <value>Puntuación</value>
+  </data>
+  <data name="Bienvenido" xml:space="preserve">
+    <value>Bienvenido</value>
   </data>
 </root>

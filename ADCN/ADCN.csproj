@@ -525,6 +525,11 @@
     <Content Include="LogoJaraSmart.ico" />
     <Content Include="MaslowSmart.ico" />
     <Content Include="MaslowSmart_icon.ico" />
+    <None Include="Resources\rosa.png" />
+    <None Include="Resources\verde.png" />
+    <None Include="Resources\azul.png" />
+    <None Include="Resources\naranja.png" />
+    <None Include="Resources\LogoJaraSmartBlaco.png" />
     <None Include="Resources\LogoJaraSmart.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

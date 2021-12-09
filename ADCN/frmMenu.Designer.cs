@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
             this.pnlTop = new System.Windows.Forms.Panel();
+            this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.lblIdioma = new System.Windows.Forms.Label();
@@ -44,8 +45,8 @@
             this.lblEncabezado = new System.Windows.Forms.Label();
             this.pnlForms = new System.Windows.Forms.Panel();
             this.pbxLogo = new System.Windows.Forms.PictureBox();
-            this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.pnlTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxIdiomaIngles)).BeginInit();
@@ -56,7 +57,6 @@
             this.pnlEncabezado.SuspendLayout();
             this.pnlForms.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlTop
@@ -66,20 +66,34 @@
             this.pnlTop.Controls.Add(this.btnCerrar);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.Location = new System.Drawing.Point(0, 0);
-            this.pnlTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlTop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlTop.Name = "pnlTop";
-            this.pnlTop.Size = new System.Drawing.Size(1691, 39);
+            this.pnlTop.Size = new System.Drawing.Size(1268, 32);
             this.pnlTop.TabIndex = 23;
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
+            this.btnMinimizar.Location = new System.Drawing.Point(1229, 9);
+            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(12, 13);
+            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMinimizar.TabIndex = 3;
+            this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // btnCerrar
             // 
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(1661, 11);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCerrar.Location = new System.Drawing.Point(1246, 9);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(16, 16);
+            this.btnCerrar.Size = new System.Drawing.Size(12, 13);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCerrar.TabIndex = 0;
             this.btnCerrar.TabStop = false;
@@ -97,20 +111,18 @@
             this.pnlMenu.Controls.Add(this.btnJuegosMemoria);
             this.pnlMenu.Controls.Add(this.btnJuegosAtencion);
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlMenu.Location = new System.Drawing.Point(0, 39);
-            this.pnlMenu.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlMenu.Location = new System.Drawing.Point(0, 32);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(264, 665);
+            this.pnlMenu.Size = new System.Drawing.Size(198, 540);
             this.pnlMenu.TabIndex = 24;
             // 
             // lblIdioma
             // 
             this.lblIdioma.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIdioma.ForeColor = System.Drawing.Color.White;
-            this.lblIdioma.Location = new System.Drawing.Point(0, 463);
-            this.lblIdioma.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIdioma.Location = new System.Drawing.Point(0, 376);
             this.lblIdioma.Name = "lblIdioma";
-            this.lblIdioma.Size = new System.Drawing.Size(264, 25);
+            this.lblIdioma.Size = new System.Drawing.Size(198, 20);
             this.lblIdioma.TabIndex = 28;
             this.lblIdioma.Text = "Idioma";
             this.lblIdioma.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -119,10 +131,9 @@
             // 
             this.pbxIdiomaIngles.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxIdiomaIngles.Image = ((System.Drawing.Image)(resources.GetObject("pbxIdiomaIngles.Image")));
-            this.pbxIdiomaIngles.Location = new System.Drawing.Point(132, 491);
-            this.pbxIdiomaIngles.Margin = new System.Windows.Forms.Padding(4);
+            this.pbxIdiomaIngles.Location = new System.Drawing.Point(99, 399);
             this.pbxIdiomaIngles.Name = "pbxIdiomaIngles";
-            this.pbxIdiomaIngles.Size = new System.Drawing.Size(47, 46);
+            this.pbxIdiomaIngles.Size = new System.Drawing.Size(35, 37);
             this.pbxIdiomaIngles.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxIdiomaIngles.TabIndex = 27;
             this.pbxIdiomaIngles.TabStop = false;
@@ -134,10 +145,9 @@
             // 
             this.pbxIdiomaEspañol.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxIdiomaEspañol.Image = ((System.Drawing.Image)(resources.GetObject("pbxIdiomaEspañol.Image")));
-            this.pbxIdiomaEspañol.Location = new System.Drawing.Point(77, 491);
-            this.pbxIdiomaEspañol.Margin = new System.Windows.Forms.Padding(4);
+            this.pbxIdiomaEspañol.Location = new System.Drawing.Point(58, 399);
             this.pbxIdiomaEspañol.Name = "pbxIdiomaEspañol";
-            this.pbxIdiomaEspañol.Size = new System.Drawing.Size(47, 46);
+            this.pbxIdiomaEspañol.Size = new System.Drawing.Size(35, 37);
             this.pbxIdiomaEspañol.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxIdiomaEspañol.TabIndex = 26;
             this.pbxIdiomaEspañol.TabStop = false;
@@ -149,10 +159,9 @@
             // 
             this.pbxAyuda.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxAyuda.Image = global::ADCN.Properties.Resources.pregunta;
-            this.pbxAyuda.Location = new System.Drawing.Point(132, 604);
-            this.pbxAyuda.Margin = new System.Windows.Forms.Padding(4);
+            this.pbxAyuda.Location = new System.Drawing.Point(99, 491);
             this.pbxAyuda.Name = "pbxAyuda";
-            this.pbxAyuda.Size = new System.Drawing.Size(47, 46);
+            this.pbxAyuda.Size = new System.Drawing.Size(35, 37);
             this.pbxAyuda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxAyuda.TabIndex = 25;
             this.pbxAyuda.TabStop = false;
@@ -163,11 +172,10 @@
             // pbxLogoMaslow
             // 
             this.pbxLogoMaslow.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbxLogoMaslow.Image = global::ADCN.Properties.Resources.LogoJaraSmart;
-            this.pbxLogoMaslow.Location = new System.Drawing.Point(32, 22);
-            this.pbxLogoMaslow.Margin = new System.Windows.Forms.Padding(4);
+            this.pbxLogoMaslow.Image = global::ADCN.Properties.Resources.LogoJaraSmartBlaco;
+            this.pbxLogoMaslow.Location = new System.Drawing.Point(24, 18);
             this.pbxLogoMaslow.Name = "pbxLogoMaslow";
-            this.pbxLogoMaslow.Size = new System.Drawing.Size(197, 177);
+            this.pbxLogoMaslow.Size = new System.Drawing.Size(148, 144);
             this.pbxLogoMaslow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxLogoMaslow.TabIndex = 18;
             this.pbxLogoMaslow.TabStop = false;
@@ -177,10 +185,9 @@
             // 
             this.pbxConfiguracion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxConfiguracion.Image = ((System.Drawing.Image)(resources.GetObject("pbxConfiguracion.Image")));
-            this.pbxConfiguracion.Location = new System.Drawing.Point(77, 604);
-            this.pbxConfiguracion.Margin = new System.Windows.Forms.Padding(4);
+            this.pbxConfiguracion.Location = new System.Drawing.Point(58, 491);
             this.pbxConfiguracion.Name = "pbxConfiguracion";
-            this.pbxConfiguracion.Size = new System.Drawing.Size(47, 46);
+            this.pbxConfiguracion.Size = new System.Drawing.Size(35, 37);
             this.pbxConfiguracion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxConfiguracion.TabIndex = 17;
             this.pbxConfiguracion.TabStop = false;
@@ -197,10 +204,9 @@
             this.btnJuegosMemoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnJuegosMemoria.ForeColor = System.Drawing.Color.White;
             this.btnJuegosMemoria.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnJuegosMemoria.Location = new System.Drawing.Point(0, 366);
-            this.btnJuegosMemoria.Margin = new System.Windows.Forms.Padding(4);
+            this.btnJuegosMemoria.Location = new System.Drawing.Point(0, 297);
             this.btnJuegosMemoria.Name = "btnJuegosMemoria";
-            this.btnJuegosMemoria.Size = new System.Drawing.Size(264, 49);
+            this.btnJuegosMemoria.Size = new System.Drawing.Size(198, 40);
             this.btnJuegosMemoria.TabIndex = 24;
             this.btnJuegosMemoria.Text = "Juegos de Memoria";
             this.btnJuegosMemoria.UseVisualStyleBackColor = false;
@@ -215,10 +221,9 @@
             this.btnJuegosAtencion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnJuegosAtencion.ForeColor = System.Drawing.Color.White;
             this.btnJuegosAtencion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnJuegosAtencion.Location = new System.Drawing.Point(0, 309);
-            this.btnJuegosAtencion.Margin = new System.Windows.Forms.Padding(4);
+            this.btnJuegosAtencion.Location = new System.Drawing.Point(0, 251);
             this.btnJuegosAtencion.Name = "btnJuegosAtencion";
-            this.btnJuegosAtencion.Size = new System.Drawing.Size(264, 49);
+            this.btnJuegosAtencion.Size = new System.Drawing.Size(198, 40);
             this.btnJuegosAtencion.TabIndex = 22;
             this.btnJuegosAtencion.Text = "Juegos de Atención";
             this.btnJuegosAtencion.UseVisualStyleBackColor = false;
@@ -228,10 +233,9 @@
             // 
             this.pnlEncabezado.Controls.Add(this.lblEncabezado);
             this.pnlEncabezado.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlEncabezado.Location = new System.Drawing.Point(264, 39);
-            this.pnlEncabezado.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlEncabezado.Location = new System.Drawing.Point(198, 32);
             this.pnlEncabezado.Name = "pnlEncabezado";
-            this.pnlEncabezado.Size = new System.Drawing.Size(1427, 82);
+            this.pnlEncabezado.Size = new System.Drawing.Size(1070, 67);
             this.pnlEncabezado.TabIndex = 26;
             // 
             // lblEncabezado
@@ -240,9 +244,8 @@
             this.lblEncabezado.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblEncabezado.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEncabezado.Location = new System.Drawing.Point(0, 0);
-            this.lblEncabezado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEncabezado.Name = "lblEncabezado";
-            this.lblEncabezado.Size = new System.Drawing.Size(1427, 82);
+            this.lblEncabezado.Size = new System.Drawing.Size(1070, 67);
             this.lblEncabezado.TabIndex = 1;
             this.lblEncabezado.Text = "Bienvenido";
             this.lblEncabezado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -252,53 +255,37 @@
             // 
             this.pnlForms.Controls.Add(this.pbxLogo);
             this.pnlForms.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlForms.Location = new System.Drawing.Point(264, 121);
-            this.pnlForms.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlForms.Location = new System.Drawing.Point(198, 99);
             this.pnlForms.Name = "pnlForms";
-            this.pnlForms.Size = new System.Drawing.Size(1427, 583);
+            this.pnlForms.Size = new System.Drawing.Size(1070, 473);
             this.pnlForms.TabIndex = 27;
             // 
             // pbxLogo
             // 
             this.pbxLogo.Image = global::ADCN.Properties.Resources.LogoJaraSmart;
-            this.pbxLogo.Location = new System.Drawing.Point(497, 124);
-            this.pbxLogo.Margin = new System.Windows.Forms.Padding(4);
+            this.pbxLogo.Location = new System.Drawing.Point(3, 135);
             this.pbxLogo.Name = "pbxLogo";
-            this.pbxLogo.Size = new System.Drawing.Size(421, 304);
+            this.pbxLogo.Size = new System.Drawing.Size(1064, 183);
             this.pbxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxLogo.TabIndex = 17;
             this.pbxLogo.TabStop = false;
             // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(1639, 11);
-            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(16, 16);
-            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimizar.TabIndex = 3;
-            this.btnMinimizar.TabStop = false;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
-            // 
             // frmMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1691, 704);
+            this.ClientSize = new System.Drawing.Size(1268, 572);
             this.Controls.Add(this.pnlForms);
             this.Controls.Add(this.pnlEncabezado);
             this.Controls.Add(this.pnlMenu);
             this.Controls.Add(this.pnlTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPrincipal";
             this.Load += new System.EventHandler(this.frmMenu_Load);
             this.pnlTop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.pnlMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbxIdiomaIngles)).EndInit();
@@ -309,7 +296,6 @@
             this.pnlEncabezado.ResumeLayout(false);
             this.pnlForms.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             this.ResumeLayout(false);
 
         }

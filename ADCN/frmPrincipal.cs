@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -24,7 +26,16 @@ namespace ADCN
             if (app.cargarLogo())
             {
                 pbxLogo.Visible = true;
+                escribirTextos();
             }
+        }
+
+        private void escribirTextos()
+        {
+            lblIdioma.Text = Res.Idioma;
+            lblBienvenido.Text = Res.Bienvenido;
+            lblNombre.Text = Res.Nombre;
+            btnEntrar.Text = Res.Empezar;
         }
 
         private void btnEntrar_Click(object sender, EventArgs e)
@@ -57,6 +68,18 @@ namespace ADCN
         private void label9_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pbxIdiomaEspañol_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("es-ES");
+            escribirTextos();
+        }
+
+        private void pbxIdiomaIngles_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
+            escribirTextos();
         }
     }
 }

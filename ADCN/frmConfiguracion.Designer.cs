@@ -30,22 +30,22 @@
         {
             this.gbxTema = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.gbxSonido = new System.Windows.Forms.GroupBox();
+            this.pbxDesactivarSonido = new System.Windows.Forms.PictureBox();
+            this.pbxActivarSonido = new System.Windows.Forms.PictureBox();
             this.pbxRosa = new System.Windows.Forms.PictureBox();
             this.pbxVerde = new System.Windows.Forms.PictureBox();
             this.pbxAzul = new System.Windows.Forms.PictureBox();
             this.pbxNaranja = new System.Windows.Forms.PictureBox();
-            this.gbxSonido = new System.Windows.Forms.GroupBox();
-            this.pbxDesactivarSonido = new System.Windows.Forms.PictureBox();
-            this.pbxActivarSonido = new System.Windows.Forms.PictureBox();
             this.gbxTema.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.gbxSonido.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDesactivarSonido)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxActivarSonido)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxRosa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxVerde)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxAzul)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxNaranja)).BeginInit();
-            this.gbxSonido.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxDesactivarSonido)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxActivarSonido)).BeginInit();
             this.SuspendLayout();
             // 
             // gbxTema
@@ -76,66 +76,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(608, 333);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // pbxRosa
-            // 
-            this.pbxRosa.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pbxRosa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbxRosa.Image = global::ADCN.Properties.Resources.theme_rosa1;
-            this.pbxRosa.Location = new System.Drawing.Point(312, 169);
-            this.pbxRosa.Name = "pbxRosa";
-            this.pbxRosa.Size = new System.Drawing.Size(288, 154);
-            this.pbxRosa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbxRosa.TabIndex = 3;
-            this.pbxRosa.TabStop = false;
-            this.pbxRosa.Click += new System.EventHandler(this.cambiarColores);
-            this.pbxRosa.MouseEnter += new System.EventHandler(this.agrandarPbx);
-            this.pbxRosa.MouseLeave += new System.EventHandler(this.minimizarPbx);
-            // 
-            // pbxVerde
-            // 
-            this.pbxVerde.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pbxVerde.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbxVerde.Image = global::ADCN.Properties.Resources.theme_verde1;
-            this.pbxVerde.Location = new System.Drawing.Point(8, 169);
-            this.pbxVerde.Name = "pbxVerde";
-            this.pbxVerde.Size = new System.Drawing.Size(288, 154);
-            this.pbxVerde.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbxVerde.TabIndex = 2;
-            this.pbxVerde.TabStop = false;
-            this.pbxVerde.Click += new System.EventHandler(this.cambiarColores);
-            this.pbxVerde.MouseEnter += new System.EventHandler(this.agrandarPbx);
-            this.pbxVerde.MouseLeave += new System.EventHandler(this.minimizarPbx);
-            // 
-            // pbxAzul
-            // 
-            this.pbxAzul.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pbxAzul.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbxAzul.Image = global::ADCN.Properties.Resources.theme_azul1;
-            this.pbxAzul.Location = new System.Drawing.Point(312, 3);
-            this.pbxAzul.Name = "pbxAzul";
-            this.pbxAzul.Size = new System.Drawing.Size(288, 153);
-            this.pbxAzul.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbxAzul.TabIndex = 1;
-            this.pbxAzul.TabStop = false;
-            this.pbxAzul.Click += new System.EventHandler(this.cambiarColores);
-            this.pbxAzul.MouseEnter += new System.EventHandler(this.agrandarPbx);
-            this.pbxAzul.MouseLeave += new System.EventHandler(this.minimizarPbx);
-            // 
-            // pbxNaranja
-            // 
-            this.pbxNaranja.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pbxNaranja.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbxNaranja.Image = global::ADCN.Properties.Resources.theme_naranja1;
-            this.pbxNaranja.Location = new System.Drawing.Point(8, 3);
-            this.pbxNaranja.Name = "pbxNaranja";
-            this.pbxNaranja.Size = new System.Drawing.Size(288, 153);
-            this.pbxNaranja.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbxNaranja.TabIndex = 0;
-            this.pbxNaranja.TabStop = false;
-            this.pbxNaranja.Click += new System.EventHandler(this.cambiarColores);
-            this.pbxNaranja.MouseEnter += new System.EventHandler(this.agrandarPbx);
-            this.pbxNaranja.MouseLeave += new System.EventHandler(this.minimizarPbx);
-            // 
             // gbxSonido
             // 
             this.gbxSonido.Controls.Add(this.pbxDesactivarSonido);
@@ -153,7 +93,7 @@
             this.pbxDesactivarSonido.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxDesactivarSonido.Image = global::ADCN.Properties.Resources.sound_off_disable;
             this.pbxDesactivarSonido.Location = new System.Drawing.Point(30, 237);
-            this.pbxDesactivarSonido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbxDesactivarSonido.Margin = new System.Windows.Forms.Padding(2);
             this.pbxDesactivarSonido.Name = "pbxDesactivarSonido";
             this.pbxDesactivarSonido.Size = new System.Drawing.Size(191, 103);
             this.pbxDesactivarSonido.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -168,7 +108,7 @@
             this.pbxActivarSonido.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxActivarSonido.Image = global::ADCN.Properties.Resources.sound_on;
             this.pbxActivarSonido.Location = new System.Drawing.Point(30, 57);
-            this.pbxActivarSonido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbxActivarSonido.Margin = new System.Windows.Forms.Padding(2);
             this.pbxActivarSonido.Name = "pbxActivarSonido";
             this.pbxActivarSonido.Size = new System.Drawing.Size(191, 103);
             this.pbxActivarSonido.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -177,6 +117,66 @@
             this.pbxActivarSonido.Click += new System.EventHandler(this.pbxActivarSonido_Click);
             this.pbxActivarSonido.MouseEnter += new System.EventHandler(this.pbxActivarSonido_MouseEnter);
             this.pbxActivarSonido.MouseLeave += new System.EventHandler(this.pbxActivarSonido_MouseLeave);
+            // 
+            // pbxRosa
+            // 
+            this.pbxRosa.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pbxRosa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxRosa.Image = global::ADCN.Properties.Resources.rosa;
+            this.pbxRosa.Location = new System.Drawing.Point(312, 169);
+            this.pbxRosa.Name = "pbxRosa";
+            this.pbxRosa.Size = new System.Drawing.Size(288, 154);
+            this.pbxRosa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxRosa.TabIndex = 3;
+            this.pbxRosa.TabStop = false;
+            this.pbxRosa.Click += new System.EventHandler(this.cambiarColores);
+            this.pbxRosa.MouseEnter += new System.EventHandler(this.agrandarPbx);
+            this.pbxRosa.MouseLeave += new System.EventHandler(this.minimizarPbx);
+            // 
+            // pbxVerde
+            // 
+            this.pbxVerde.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pbxVerde.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxVerde.Image = global::ADCN.Properties.Resources.verde;
+            this.pbxVerde.Location = new System.Drawing.Point(8, 169);
+            this.pbxVerde.Name = "pbxVerde";
+            this.pbxVerde.Size = new System.Drawing.Size(288, 154);
+            this.pbxVerde.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxVerde.TabIndex = 2;
+            this.pbxVerde.TabStop = false;
+            this.pbxVerde.Click += new System.EventHandler(this.cambiarColores);
+            this.pbxVerde.MouseEnter += new System.EventHandler(this.agrandarPbx);
+            this.pbxVerde.MouseLeave += new System.EventHandler(this.minimizarPbx);
+            // 
+            // pbxAzul
+            // 
+            this.pbxAzul.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pbxAzul.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxAzul.Image = global::ADCN.Properties.Resources.azul;
+            this.pbxAzul.Location = new System.Drawing.Point(312, 3);
+            this.pbxAzul.Name = "pbxAzul";
+            this.pbxAzul.Size = new System.Drawing.Size(288, 153);
+            this.pbxAzul.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxAzul.TabIndex = 1;
+            this.pbxAzul.TabStop = false;
+            this.pbxAzul.Click += new System.EventHandler(this.cambiarColores);
+            this.pbxAzul.MouseEnter += new System.EventHandler(this.agrandarPbx);
+            this.pbxAzul.MouseLeave += new System.EventHandler(this.minimizarPbx);
+            // 
+            // pbxNaranja
+            // 
+            this.pbxNaranja.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pbxNaranja.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxNaranja.Image = global::ADCN.Properties.Resources.naranja;
+            this.pbxNaranja.Location = new System.Drawing.Point(8, 3);
+            this.pbxNaranja.Name = "pbxNaranja";
+            this.pbxNaranja.Size = new System.Drawing.Size(288, 153);
+            this.pbxNaranja.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxNaranja.TabIndex = 0;
+            this.pbxNaranja.TabStop = false;
+            this.pbxNaranja.Click += new System.EventHandler(this.cambiarColores);
+            this.pbxNaranja.MouseEnter += new System.EventHandler(this.agrandarPbx);
+            this.pbxNaranja.MouseLeave += new System.EventHandler(this.minimizarPbx);
             // 
             // frmConfiguracion
             // 
@@ -191,13 +191,13 @@
             this.Load += new System.EventHandler(this.frmConfiguracion_Load);
             this.gbxTema.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.gbxSonido.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDesactivarSonido)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxActivarSonido)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxRosa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxVerde)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxAzul)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxNaranja)).EndInit();
-            this.gbxSonido.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbxDesactivarSonido)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxActivarSonido)).EndInit();
             this.ResumeLayout(false);
 
         }

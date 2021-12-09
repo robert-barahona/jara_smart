@@ -19,7 +19,7 @@ namespace ADCN {
     // a través de una herramienta como ResGen o Visual Studio.
     // Para agregar o quitar un miembro, edite el archivo .ResX y, a continuación, vuelva a ejecutar ResGen
     // con la opción /str o recompile su proyecto de VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Res {
@@ -241,6 +241,15 @@ namespace ADCN {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Bienvenido.
+        /// </summary>
+        internal static string Bienvenido {
+            get {
+                return ResourceManager.GetString("Bienvenido", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Ingeniería de Software.
         /// </summary>
         internal static string Carrera {
@@ -259,7 +268,7 @@ namespace ADCN {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Juego: &quot;Colores y Significados&quot;.
+        ///   Busca una cadena traducida similar a &quot;Colores y Significados&quot;.
         /// </summary>
         internal static string Colores_y_Significados {
             get {
@@ -322,7 +331,7 @@ namespace ADCN {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Juego: &quot;¿Dónde está Pikachu?&quot;.
+        ///   Busca una cadena traducida similar a &quot;¿Dónde está Pikachu?&quot;.
         /// </summary>
         internal static string Donde_esta_pikachu {
             get {
@@ -331,7 +340,7 @@ namespace ADCN {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Juego: &quot;Elegir la letra correcta&quot;.
+        ///   Busca una cadena traducida similar a &quot;Elegir la letra correcta&quot;.
         /// </summary>
         internal static string Elegir_la_letra_correcta {
             get {
@@ -547,7 +556,7 @@ namespace ADCN {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Jugar.
+        ///   Busca una cadena traducida similar a JUGAR.
         /// </summary>
         internal static string Jugar {
             get {
@@ -633,6 +642,15 @@ namespace ADCN {
         internal static string Nivel6 {
             get {
                 return ResourceManager.GetString("Nivel6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Nombre.
+        /// </summary>
+        internal static string Nombre {
+            get {
+                return ResourceManager.GetString("Nombre", resourceCulture);
             }
         }
         
@@ -853,7 +871,7 @@ namespace ADCN {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Juego: &quot;Provincias del Ecuador&quot;.
+        ///   Busca una cadena traducida similar a &quot;Provincias del Ecuador&quot;.
         /// </summary>
         internal static string Provincias_del_Ecuador {
             get {
@@ -867,6 +885,24 @@ namespace ADCN {
         internal static string Puntos {
             get {
                 return ResourceManager.GetString("Puntos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Puntuación.
+        /// </summary>
+        internal static string Puntuacion {
+            get {
+                return ResourceManager.GetString("Puntuacion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a PUNTUACIONES.
+        /// </summary>
+        internal static string Puntuaciones {
+            get {
+                return ResourceManager.GetString("Puntuaciones", resourceCulture);
             }
         }
         
