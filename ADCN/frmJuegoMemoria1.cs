@@ -49,9 +49,9 @@ namespace ADCN
             if (correcto1 == true)
             {
                 juego.reproducirSonido("ring");
-                juego.puntuacion += 1000;
+                juego.puntuacion += 2000;
                 pbxCheck.Image = Image.FromFile("..\\..\\Resources\\lista.png");
-                nuevaOperacionAsync();
+                nuevaOperacion();
             }
             else
             {
@@ -68,9 +68,9 @@ namespace ADCN
             if (correcto2 == true)
             {
                 juego.reproducirSonido("ring");
-                juego.puntuacion += 1000;
+                juego.puntuacion += 2000;
                 pbxCheck.Image = Image.FromFile("..\\..\\Resources\\lista.png");
-                nuevaOperacionAsync();
+                nuevaOperacion();
             }
             else
             {
@@ -87,9 +87,9 @@ namespace ADCN
             if (correcto3 == true)
             {
                 juego.reproducirSonido("ring");
-                juego.puntuacion += 1000;
+                juego.puntuacion += 2000;
                 pbxCheck.Image = Image.FromFile("..\\..\\Resources\\lista.png");
-                nuevaOperacionAsync();
+                nuevaOperacion();
             }
             else
             {
@@ -106,9 +106,9 @@ namespace ADCN
             if (correcto4 == true)
             {
                 juego.reproducirSonido("ring");
-                juego.puntuacion += 1000;
+                juego.puntuacion += 2000;
                 pbxCheck.Image = Image.FromFile("..\\..\\Resources\\lista.png");
-                nuevaOperacionAsync();
+                nuevaOperacion();
             }
             else
             {
@@ -120,7 +120,7 @@ namespace ADCN
             timer2.Start();
         }
 
-        private async Task nuevaOperacionAsync()
+        private void nuevaOperacion()
         {
             string[] nivel = lblNivel.Text.Split();
             switch (nivel[1])

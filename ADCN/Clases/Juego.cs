@@ -653,7 +653,7 @@ namespace ADCN.Clases
                             juegoMemoria3.lblNivel.Text = Res.Nivel2;
                             juegoMemoria3.historia = Res.Historia2_jirafa;
                             frases = juegoMemoria3.historia.Split(',');
-                            if (i != 7)
+                            if (i != 5)
                             {
                                 juegoMemoria3.lblFrase.Text = frases[i];
                             }
@@ -662,7 +662,7 @@ namespace ADCN.Clases
                             juegoMemoria3.lblNivel.Text = Res.Nivel3;
                             juegoMemoria3.historia = Res.Historia3_gato;
                             frases = juegoMemoria3.historia.Split(',');
-                            if (i != 11)
+                            if (i != 8)
                             {
                                 juegoMemoria3.lblFrase.Text = frases[i];
                             }

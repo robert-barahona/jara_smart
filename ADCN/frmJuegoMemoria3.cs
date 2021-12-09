@@ -62,11 +62,11 @@ namespace ADCN
         {
             
             frase = txtIngresarFrase.Text + " ";
-            if (frase == historia_concatenada)
+            if (frase.ToLower() == historia_concatenada.ToLower())
             {
                 pbxCheck.Image = Image.FromFile("..\\..\\Resources\\lista.png");
                 juego.reproducirSonido("ring");
-                juego.puntuacion += 10000;
+                juego.puntuacion += 30000;
                 indice++;
                 string[] lbl_nivel = lblNivel.Text.Split();
                 int nivel = Convert.ToInt32(lbl_nivel[1]);
@@ -82,7 +82,7 @@ namespace ADCN
             timer2.Start();
         }
 
-        private async Task comprobarPaseDeNivelAsync()
+        private void comprobarPaseDeNivel()
         {
             string[] nivel = lblNivel.Text.Split();
             switch (nivel[1])
@@ -97,7 +97,7 @@ namespace ADCN
                     }
                     break;
                 case "2":
-                    if (indice == 7)
+                    if (indice == 5)
                     {
                         timer1.Stop();
                         this.Enabled = false;
@@ -106,7 +106,7 @@ namespace ADCN
                     }
                     break;
                 case "3":
-                    if (indice == 11)
+                    if (indice == 8)
                     {
                         juego.reproducirSonido("victory2");
                         timer1.Stop();
@@ -215,7 +215,7 @@ namespace ADCN
         {
             timer2.Stop();
             pbxCheck.Visible = false;
-            if (frase == historia_concatenada)
+            if (frase.ToLower() == historia_concatenada.ToLower())
             {
                 txtIngresarFrase.Visible = false;
                 btnComprobar.Visible = false;
@@ -223,7 +223,7 @@ namespace ADCN
                 AcceptButton = btnSiguiente;
                 lblFrase.Focus();
                 lblTitulo.Text = Res.Memoriza_la_frase_y_haz_clic_en_siguiente;
-                comprobarPaseDeNivelAsync();
+                comprobarPaseDeNivel();
             }
         }
     }

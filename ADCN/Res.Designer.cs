@@ -448,7 +448,7 @@ namespace ADCN {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Había una vez,una jirafa llamada Rafaela,que usaba las gafas de su abuelo,porque desde allá arribota,no ve hache ni jota,que creyó que un pino,era un jirafo muy fino.
+        ///   Busca una cadena traducida similar a Había una vez,una jirafa llamada Rafaela,que usaba las gafas de su abuelo,porque desde allá arribota,no ve hache ni jota.
         /// </summary>
         internal static string Historia2_jirafa {
             get {
@@ -457,7 +457,7 @@ namespace ADCN {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Había una vez,un gato llamado Ruperto,que la casa revisa,porque un ratoncito,ronca en la repisa,busca despacito,en todos los rincones,pero el gato dormilón,se durmió en un rincón,y ron ron ron,ronca y ronca don ratón.
+        ///   Busca una cadena traducida similar a Había una vez,un gato llamado Ruperto,que la casa revisa,porque un ratoncito,ronca en la repisa,busca despacito,en todos los rincones,pero el gato dormilón se durmió en un rincón.
         /// </summary>
         internal static string Historia3_gato {
             get {
