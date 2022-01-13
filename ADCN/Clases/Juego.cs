@@ -262,7 +262,7 @@ namespace ADCN.Clases
                     frmJuegoAtencion3 juegoAtencion3 = Application.OpenForms.OfType<frmJuegoAtencion3>().SingleOrDefault();
                     Random random = new Random();
                     String[] colores = new string[10] { "Negro", "Azul", "Rojo", "Amarillo", "Morado", "Rosa", "Naranja", "Celeste", "Verde", "Café" };
-                    String[] colores_ingles = new string[10] { "Black", "Blue", "Red", "Gold", "Purple", "Pink", "Orange", "Cyan", "Green", "Brown" };
+                    String[] colores_ingles = new string[10] { "Black", "Blue", "Red", "Yellow", "Purple", "Pink", "Orange", "Cyan", "Green", "Brown" };
                     String[] colores2 = new string[10] { "Black", "Blue", "Red", "Gold", "DarkViolet", "Violet", "Orange", "Cyan", "Green", "Chocolate" };
                     int significado_num = 0;
                     int color_num = 0;
@@ -372,8 +372,8 @@ namespace ADCN.Clases
                             juegoMemoria1.lblNivel.Text = Res.Nivel2;
                             do
                             {
-                                a = rnd.Next(6, 11);
-                                b = rnd.Next(5, 11);
+                                a = rnd.Next(5, 11);
+                                b = rnd.Next(6, 11);
                             } while (juegoMemoria1.lblOperacion.Text == a.ToString() + "x" + b.ToString());
                             
                             respuesta = a * b;
@@ -415,7 +415,7 @@ namespace ADCN.Clases
                             do
                             {
                                 a = rnd.Next(9, 13);
-                                b = rnd.Next(5, 13);
+                                b = rnd.Next(6, 13);
                             } while (juegoMemoria1.lblOperacion.Text == a.ToString() + "x" + b.ToString());
 
                             respuesta = a * b;

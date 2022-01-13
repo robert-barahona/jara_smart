@@ -180,6 +180,7 @@
             this.txtIngresarFrase.Location = new System.Drawing.Point(0, 0);
             this.txtIngresarFrase.Multiline = true;
             this.txtIngresarFrase.Name = "txtIngresarFrase";
+            this.txtIngresarFrase.ShortcutsEnabled = false;
             this.txtIngresarFrase.Size = new System.Drawing.Size(379, 100);
             this.txtIngresarFrase.TabIndex = 71;
             this.txtIngresarFrase.Visible = false;
