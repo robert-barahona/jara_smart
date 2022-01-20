@@ -102,6 +102,8 @@ namespace ADCN
 
         private void pbxLogoMaslow_Click(object sender, EventArgs e)
         {
+            escribirTextos();
+            cerrarVentanas();
         }
 
         private void pbxAyuda_Click(object sender, EventArgs e)
