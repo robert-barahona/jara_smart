@@ -38,6 +38,12 @@ namespace ADCN.Clases
             menu.Show();
         }
 
+        public void mostrarLogin()
+        {
+            frmPrincipal login = new frmPrincipal();
+            login.Show();
+        }
+
         public bool cerrarAplicacion()
         {
             return true;

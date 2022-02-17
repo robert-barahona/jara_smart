@@ -82,7 +82,7 @@
             this.btnRendirse.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRendirse.ForeColor = System.Drawing.Color.White;
             this.btnRendirse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRendirse.Location = new System.Drawing.Point(974, 422);
+            this.btnRendirse.Location = new System.Drawing.Point(974, 415);
             this.btnRendirse.Name = "btnRendirse";
             this.btnRendirse.Size = new System.Drawing.Size(84, 40);
             this.btnRendirse.TabIndex = 56;
@@ -241,7 +241,7 @@
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.White;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(14, 422);
+            this.btnSalir.Location = new System.Drawing.Point(14, 415);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(84, 40);
             this.btnSalir.TabIndex = 64;

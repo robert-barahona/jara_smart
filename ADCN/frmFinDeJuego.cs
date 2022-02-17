@@ -119,6 +119,8 @@ namespace ADCN
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
+            frmMenu menu = Application.OpenForms.OfType<frmMenu>().SingleOrDefault();
+            menu.lblEncabezado.Text = Res.Bienvenida + " " + menu.nombre_est.First().ToString().ToUpper() + menu.nombre_est.Substring(1);
             switch (idGame)
             {
                 case 1:

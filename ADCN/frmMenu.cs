@@ -88,10 +88,8 @@ namespace ADCN
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             Clases.DesarrolloCognitivo des_cog = Clases.DesarrolloCognitivo.Instance();
-            if (des_cog.cerrarAplicacion())
-            {
-                Application.Exit();
-            }
+            des_cog.mostrarLogin();
+            this.Close();
         }
 
         private void pbxConfiguracion_Click(object sender, EventArgs e)
